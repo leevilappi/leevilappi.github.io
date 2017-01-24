@@ -9,37 +9,75 @@
 		<link rel= "shorcut icon"
 		href="assets/favicon.ico" />
 		<title>Öljy</title>
+
+		<style>
+			.gap-10{
+				width: 100%;
+				height: 10px
+			}
+		</style>
+
 	</head>
 
 
-	<body>
+	<body style="font-family:'Arial', Helvetica, sans-serif">
+			
 		<nav>
 			<ul>
-				<li><a href="#"> Koti			</a></li>
-				<li><a href="#"> Tietoa öljystä </a></li>
-				<li><a href="#"> Medialle		</a></li>
+				<li><a href="#first">Koti &#127757;</a></li>
+				<li><a href="#">Tietoa öljystä</a></li>
+
+				<li>
+				<details open>
+				<summary>Posts</summary>
+				<ul>
+					<li><a href="#first"> Eka blogi </a></li>
+					<li><a href="#second"> Toka blogi </a></li>
+				</ul>
+				</details>
+
+				</li>
 			</ul>
 		</nav>
 
 		<header>
 			<h1><b>Sivu öljyn puolesta</b></h1>
-			<img src="assets/poster.jpg" width="80%">
+			<img src="assets/poster.jpg" width="50%">
 		</header>
 
 		<section>
-			<article>
+			<article id="first">
 				<h2> My first blog post </h2>
 				<p>&nbsp; Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque id velit quis libero tempus ullamcorper vitae eu augue. Donec quis sem ut nibh scelerisque rutrum.<br> Pellentesque lorem urna, commodo vitae eleifend eget, tincidunt vitae dolor. Curabitur ultrices condimentum dapibus. Nunc consequat magna sed sem lacinia, at egestas nibh ultrices. Nam sed quam quis risus porttitor suscipit eget sed urna. Cras augue nunc, lacinia sed nibh a, tincidunt tristique nisl.</p>
 				<img src="assets/poster.jpg" width="10%" alt= "Could not load picture.">
 			</article>
-			<article>
+
+			<article id= "second">
 				<h2>My second blog post</h2>
 				<p>&nbsp; Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque id velit quis libero tempus ullamcorper vitae eu augue. Donec quis sem ut nibh scelerisque rutrum.<br> Pellentesque lorem urna, commodo vitae eleifend eget, tincidunt vitae dolor. Curabitur ultrices condimentum dapibus. Nunc consequat magna sed sem lacinia, at egestas nibh ultrices. Nam sed quam quis risus porttitor suscipit eget sed urna. Cras augue nunc, lacinia sed nibh a, tincidunt tristique nisl.</p>
+
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/qGxOtalqpzk" frameborder="0" allowfullscreen></iframe>
 
 			</article>
 
 		</section>
 	</body>
+
+	<aside id="sidebar">
+		<article>
+			<h3>Luetuimmat:</h3>
+			<li>Polttoaineverotus laskee</li>
+			<li>Orankit eivät ole enää vaarassa</li>
+			<li>Auto, joka toimii pekonin rasvalla!</li>
+		</article>
+	</aside>
+
+	<div class="gap-10"></div>
+
+	<footer>
+		<hr style="width: 100%">
+		<p><b>&#169; Leevi Lappi </b></p>
+	</footer>
 
 
 </html>
