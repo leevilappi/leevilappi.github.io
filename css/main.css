@@ -107,14 +107,16 @@ html {
 
 .site-header {
     box-shadow: 0 1px 3px #333;
-    background-color: #eee
+    background-color: #eee;
+    white-space: nowrap;
 
 }
 
 .site-header h1{
     margin-top: 0px;
     padding: 10px 5%;
-    float: left;
+    display: inline-block;
+
 }
 
 .logo a {
@@ -129,7 +131,7 @@ html {
 
 
 .main-nav {
-        float: right;
+        display: inline-block;
         font-size: 18px;
 }
 
@@ -154,9 +156,7 @@ html {
 
 .main-nav ul {
     padding: 0px;
-    margin: 0px;
     margin-top: 30px;
-    padding-right: 30px;
     text-decoration: none;
     white-space: nowrap;
 
@@ -173,6 +173,12 @@ html {
     margin-top: 0;
 }
 
+
+.column-wrapper {
+    width: 90%;
+    margin: 0 auto;
+}
+
 .main-col {
     float: left;
     width: 70%;
@@ -186,7 +192,34 @@ html {
 }
 
 
+.main-footer {
+    border-top: 1px solid #0151a7;
+    background: #222;
+    color: #fff;
+    padding: 20px 5% 10px 5%;
+    white-space: nowrap;
 
+}
+
+.copywrite{
+    display: inline-block;
+
+}
+
+.footer-nav {
+    list-style: none;
+    display: inline-block;
+}
+
+.footer-nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-nav li {
+    padding-left: 10px;
+    display: inline;
+}
 
 
 
