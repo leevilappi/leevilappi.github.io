@@ -119,9 +119,9 @@ html {
 
 .logo a {
     display: block;
-    width: 300px;
-    height: 111px;
-    background: url(../img/logo.png) no-repeat;
+    width: 200px;
+    height: 60px;
+    background: url(../img/logo.svg) no-repeat;
     text-indent: -999999px;
 
     
@@ -130,12 +130,11 @@ html {
 
 .main-nav {
         float: right;
+        font-size: 18px;
 }
 
 .main-nav ul li {
     padding-left: 10px;
-    display: inline;
-
 }
 
 
@@ -145,13 +144,46 @@ html {
 
 }
 
-.main-nav ul {
-    padding: 0px;
-    margin: 0px;
-    text-decoration: none;
+.main-nav li {
+    display: inline-block; /* to display the menu items as blocks in same line */
+    list-style: none;
+    text-align: center; /* center align the text within the block */
+    vertical-align: middle; /* align the contents to middle vertically */
 
 }
 
+.main-nav ul {
+    padding: 0px;
+    margin: 0px;
+    margin-top: 30px;
+    padding-right: 30px;
+    text-decoration: none;
+    white-space: nowrap;
+
+}
+
+.billboard {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 40px;
+}
+
+.billboard h2 {
+    margin-top: 0;
+}
+
+.main-col {
+    float: left;
+    width: 70%;
+}
+
+.sidebar-col {
+    float: right;
+    background-color: #ccc;
+    width: 30%;
+    padding: 10px 5%
+}
 
 
 
