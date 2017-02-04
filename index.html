@@ -1,63 +1,58 @@
 
 <!DOCTYPE html>
-
 <html>
-	<head>
-		<meta charset="UTF-8"/>
-		<meta name="author" content="Leevi Lappi" />
-		<meta name="description" content="Practice page"/>
-		<link rel= "shorcut icon"
-		href="assets/favicon.ico" />
-		<title>Öljy</title>
+<head>
+	<meta charset="UTF-8"/>
+	<meta name="author" content="Leevi Lappi" />
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="description" content="Practice page"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-		<style>
-			.gap-10{
-				width: 100%;
-				height: 10px
-			}
-		</style>
-
-	</head>
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/main.css">
 
 
-	<body style="font-family:'Arial', Helvetica, sans-serif">
-			
-		<nav>
-			<ul>
-				<li><a href="#first">Koti &#127757;</a></li>
-				<li><a href="#">Tietoa öljystä</a></li>
+	<link rel="apple-touch-icon" href="apple-touch-icon.png">
 
-				<li>
-				<details open>
-				<summary>Posts</summary>
+        
+
+    	<link rel= "shorcut icon"
+    	href="favicon.ico" />
+
+    	<title>Öljy</title>
+
+    </head>
+
+
+	<body>
+
+		<!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+		
+		<nav class="navbar navbar-fixed-top" role="navigation">
+			<div>
 				<ul>
-					<li><a href="#first">&#x2116; 1. blogi </a></li>
-					<li><a href="#second">&#x2116; 2. blogi </a></li>
+					<li><a href="#first">Koti &#127757;</a></li>
+					<li><a href="#">Tietoa öljystä</a></li>	
 				</ul>
-				</details>
-
-				</li>
-			</ul>
+			</div>
 		</nav>
 
 		<header>
-			<h1><b>Sivu öljyn puolesta</b></h1>
-			<img src="assets/poster.jpg" width="50%">
+			<h1 class="logo"><a href="#"> Sivu öljyn puolesta </a></h1>
 		</header>
 
-		<section>
+		<section class="clearfix">
 			<article id="first">
 				<h2> My first blog post </h2>
-				<p>&nbsp; Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque id velit quis libero tempus ullamcorper vitae eu augue. Donec quis sem ut nibh scelerisque rutrum.<br> Pellentesque lorem urna, commodo vitae eleifend eget, tincidunt vitae dolor. Curabitur ultrices condimentum dapibus. Nunc consequat magna sed sem lacinia, at egestas nibh ultrices. Nam sed quam quis risus porttitor suscipit eget sed urna. Cras augue nunc, lacinia sed nibh a, tincidunt tristique nisl.</p>
-				<img src="assets/poster.jpg" width="10%" alt= "Could not load picture.">
+				<img class="image"src="img/logo.svg">
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque id velit quis libero tempus ullamcorper vitae eu augue. Donec quis sem ut nibh scelerisque rutrum.<br> Pellentesque lorem urna, commodo vitae eleifend eget, tincidunt vitae dolor. Curabitur ultrices condimentum dapibus. Nunc consequat magna sed sem lacinia, at egestas nibh ultrices. Nam sed quam quis risus porttitor suscipit eget sed urna. Cras augue nunc, lacinia sed nibh a, tincidunt tristique nisl.</p>
 			</article>
 
 			<article id= "second">
 				<h2>My second blog post</h2>
-				<p>&nbsp; Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque id velit quis libero tempus ullamcorper vitae eu augue. Donec quis sem ut nibh scelerisque rutrum.<br> Pellentesque lorem urna, commodo vitae eleifend eget, tincidunt vitae dolor. Curabitur ultrices condimentum dapibus. Nunc consequat magna sed sem lacinia, at egestas nibh ultrices. Nam sed quam quis risus porttitor suscipit eget sed urna. Cras augue nunc, lacinia sed nibh a, tincidunt tristique nisl.</p>
-
-				<iframe width="560" height="315" src="https://www.youtube.com/embed/qGxOtalqpzk" frameborder="0" allowfullscreen></iframe>
-
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque id velit quis libero tempus ullamcorper vitae eu augue. Donec quis sem ut nibh scelerisque rutrum.<br> Pellentesque lorem urna, commodo vitae eleifend eget, tincidunt vitae dolor. Curabitur ultrices condimentum dapibus. Nunc consequat magna sed sem lacinia, at egestas nibh ultrices. Nam sed quam quis risus porttitor suscipit eget sed urna. Cras augue nunc, lacinia sed nibh a, tincidunt tristique nisl.</p>
 			</article>
 
 		</section>
@@ -66,9 +61,12 @@
 	<aside id="sidebar">
 		<article>
 			<h3>Luetuimmat:</h3>
-			<li>Polttoaineverotus laskee</li>
-			<li>Orankit eivät ole enää vaarassa</li>
-			<li>Auto, joka toimii pekonin rasvalla!</li>
+				<ul class="nav"> 
+					<li> <a href="#">Polttoaineverotus laskee				</a> </li>
+					<li> <a href="#">Orangit eivät ole enää vaarassa		</a> </li>
+					<li> <a href="#">Auto, joka toimii pekonin rasvalla!	</a> </li>
+				</u>
+				
 		</article>
 	</aside>
 
@@ -79,7 +77,5 @@
 		<p><b>&#169; Leevi Lappi </b></p>
 	</footer>
 
-
-</html>
 
 </html>
