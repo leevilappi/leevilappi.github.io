@@ -104,131 +104,55 @@ html {
 }
 
 
-nav{
-    background: url('http://www.designyourway.net/diverse/darkpat/COLOURlovers.com-Background1.jpg');
+
+.site-header {
+    box-shadow: 0 1px 3px #333;
+    background-color: #eee
 
 }
 
-.navbar-fixed-top{
-    min-height: 50px
+.site-header h1{
+    margin-top: 0px;
+    padding: 10px 5%;
+    float: left;
 }
-
-.navbar-fixed-top ul li{
-display:inline-block;
-color:#808080 !important;
-padding-left: 20px;
-padding-top: 10px
-}
-
-.navbar-fixed-top:first-child{
-    padding-left: 40%
-}
-
 
 .logo a {
     display: block;
-    width: 287px;
-    height: 100px;
-    background: url('../img/logo.svg') no-repeat;
-    text-indent: -9999px
-}
-
-
-
-nav a:visited {
-    color: white;
-}
-
-nav a:hover {
-    text-decoration: underline;
-}
-
-#sidebar {
-    list-style: none;
-}
-
-#sidebar a:hover {
-    text-decoration: underline;
-}
-
-#sidebar a {
-    text-decoration: none;
-    color: black;
-}
-
-#sidebar a:visited {
-    color: grey;
-}   
-
-section{
-    border: 1px solid black;
-    background: rgba(0,0,0,0.3);
-    min-height: 200px;
-    padding: 20px 15px ;
-    max-width: 800px;
-    min-width: 400px;
-
-    column-count: 2;
-    column-rule-style: solid;
-
-    float: left;
-    margin: 10px 1.5%;
-    width: 80%;
+    width: 300px;
+    height: 111px;
+    background: url(../img/logo.png) no-repeat;
+    text-indent: -999999px;
 
     
 }
 
-header {
-    width: 55%;
-    margin: 20px auto;
+
+.main-nav {
+        float: right;
 }
 
-
-section p{
-    text-indent: 10px;
-}
-
-.image {
-    height: 100px;
-    margin-right: 40px;
+.main-nav ul li {
     padding-left: 10px;
-    float: right;
-}
-
-article {
-    padding: 10px
-}
-
-#second {
-    display: inline-block;
-}
-
-aside:hover{
-    background: #555;
-}
-
-aside {
-    float: right;
-    margin: 10px 1.5%;
-    width: 20%;
-    min-width: 220 ;
-    background: #666
-
+    display: inline;
 
 }
 
-aside ul {
-    list-style: none;
-    margin-left: -20px;
+
+.main-nav ul li a {
+    text-decoration: none;
+    color: #0151a7;
+
 }
 
-aside li:first-child {
-    font-weight: bold;
+.main-nav ul {
+    padding: 0px;
+    margin: 0px;
+    text-decoration: none;
+
 }
 
-footer{
-    height: 50px;
-}
+
 
 
 
@@ -236,7 +160,7 @@ footer{
 
 /* ==========================================================================
    Helper classes
-   ========================================================================== */
+   ========================================================================== 
 
 /*
  * Hide visually and from screen readers
