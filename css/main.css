@@ -180,12 +180,15 @@
         margin-top: 0px;
         padding: 10px 5%;
         display: inline-block;
-
-
     }
 
+    .topnav ul li:not(:first-child){
+        float: right;
+    } 
+
+
     .billboard {
-        height: 535px;
+        height: 600px;
         background: url(../img/road-1351x901.jpg);
 
     }
@@ -193,20 +196,13 @@
 }
 
 
-
-.logo a {
-    display: block;
-    width: 200px;
-    height: 60px;
-    background: url(../img/logo.svg) no-repeat;
-    text-indent: -999999px;
-
-    
-}
+.topnav ul li:first-child{
+        padding-left: 20px;
+} 
 
 
 
-.splash{
+.main-splash{
     padding-top: 25%
 
 }
@@ -227,6 +223,11 @@
     border: 1px solid Black;
 }
 
+.col p {
+    text-align: justify;
+    padding: 0 5%;
+}
+
 /*    .main-col {
         float: left;
         width: 70%;
@@ -244,7 +245,14 @@
     opacity: 0.8;
     color: #fff;
     text-align: center;
+    background: url(../img/road-1351x901.jpg);
+
 }
+
+
+
+
+
 
 .main-footer {
     border-top: 1px solid #0151a7;
@@ -255,17 +263,25 @@
 
 }
 
+
+#lvm-icon img{
+    margin-top: -15px;
+}
+
+
 .copywrite{
     /*display: inline-block;*/
     float: left;
+    padding-right: 40px;
 
 }
 
 .footer-nav {
     list-style: none;
     /*display: inline-block;*/
-    float: right;
 }
+
+
 
 .footer-nav a {
     color: #fff;
@@ -273,8 +289,8 @@
 }
 
 .footer-nav li {
-    padding-left: 10px;
-    display: inline;
+    float: left;
+    padding-left: 5px
 }
 
 
