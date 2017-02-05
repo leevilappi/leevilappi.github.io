@@ -176,28 +176,21 @@
 
 @media only screen and (min-width: 768px) {
 
-.site-header h1{
-    margin-top: 0px;
-    padding: 10px 5%;
-    display: inline-block;
+    .site-header h1{
+        margin-top: 0px;
+        padding: 10px 5%;
+        display: inline-block;
 
+
+    }
+
+    .billboard {
+        height: 535px;
+        background: url(../img/road-1351x901.jpg);
+
+    }
 
 }
-
-.billboard {
-    height: 535px;
-    background: url(../img/road-1351x901.jpg);
-
-}
-
-}
-
-.billboard{
-    width: 100%;
-    color: #fff;
-    text-align: center;
-}
-
 
 
 
@@ -218,17 +211,23 @@
 
 }
 
-    .billboard h2 {
-        margin-top: 0;
-    }
+.billboard h2 {
+    margin-top: 0;
+}
 
 
-    .column-wrapper {
-        width: 90%;
-        margin: 0 auto;
-    }
+.column-wrapper {
+    width: 90%;
+    margin: 0 auto;
+}
 
-    .main-col {
+.col {
+    padding-top: 20px;
+    text-align: center;
+    border: 1px solid Black;
+}
+
+/*    .main-col {
         float: left;
         width: 70%;
     }
@@ -238,155 +237,49 @@
         background-color: #ccc;
         width: 30%;
         padding: 10px 5%
-    }
+        }*/
 
-
-    .main-footer {
-        border-top: 1px solid #0151a7;
-        background: #222;
-        color: #fff;
-        padding: 20px 5% 10px 5%;
-
-
-    }
-
-    .copywrite{
-        /*display: inline-block;*/
-        float: left;
-
-    }
-
-    .footer-nav {
-        list-style: none;
-        /*display: inline-block;*/
-        float: right;
-    }
-
-    .footer-nav a {
-        color: #fff;
-        text-decoration: none;
-    }
-
-    .footer-nav li {
-        padding-left: 10px;
-        display: inline;
-    }
-
-
-
-
-
-
-
-
-    /* Smartphones (portrait and landscape) ----------- */
-    @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
-        /* Styles */
-    }
-
-    /* Smartphones (landscape) ----------- */
-    @media only screen and (min-width : 321px) {
-        /* Styles */
-    }
-
-    /* Smartphones (portrait) ----------- */
-    @media only screen and (max-width : 320px) {
-        /* Styles */
-    }
-
-    /* iPads (portrait and landscape) ----------- */
-    @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
-        /* Styles */
-    }
-
-    /* iPads (landscape) ----------- */
-    @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
-        /* Styles */
-    }
-
-    /* iPads (portrait) ----------- */
-    @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
-        /* Styles */
-    }
-/**********
-iPad 3
-**********/
-@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) and (-webkit-min-device-pixel-ratio : 2) {
-    /* Styles */
+.billboard{
+    width: 100%;
+    opacity: 0.8;
+    color: #fff;
+    text-align: center;
 }
 
-@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) and (-webkit-min-device-pixel-ratio : 2) {
-    /* Styles */
-}
-/* Desktops and laptops ----------- */
-@media only screen  and (min-width : 1224px) {
-    /* Styles */
+.main-footer {
+    border-top: 1px solid #0151a7;
+    background: #222;
+    color: #fff;
+    padding: 20px 5% 10px 5%;
+
+
 }
 
-/* Large screens ----------- */
-@media only screen  and (min-width : 1824px) {
-    /* Styles */
+.copywrite{
+    /*display: inline-block;*/
+    float: left;
+
 }
 
-/* iPhone 4 ----------- */
-@media only screen and (min-device-width : 320px) and (max-device-width : 480px) and (orientation : landscape) and (-webkit-min-device-pixel-ratio : 2) {
-    /* Styles */
+.footer-nav {
+    list-style: none;
+    /*display: inline-block;*/
+    float: right;
 }
 
-@media only screen and (min-device-width : 320px) and (max-device-width : 480px) and (orientation : portrait) and (-webkit-min-device-pixel-ratio : 2) {
-    /* Styles */
+.footer-nav a {
+    color: #fff;
+    text-decoration: none;
 }
 
-/* iPhone 5 ----------- */
-@media only screen and (min-device-width: 320px) and (max-device-height: 568px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 2){
-    /* Styles */
-}
-
-@media only screen and (min-device-width: 320px) and (max-device-height: 568px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 2){
-    /* Styles */
+.footer-nav li {
+    padding-left: 10px;
+    display: inline;
 }
 
 
 
-@media only screen and (min-device-width: 375px) and (max-device-height: 667px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 2){
-    /* Styles */
-}
 
-/* iPhone 6+ ----------- */
-@media only screen and (min-device-width: 414px) and (max-device-height: 736px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 2){
-    /* Styles */
-}
-
-@media only screen and (min-device-width: 414px) and (max-device-height: 736px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 2){
-    /* Styles */
-}
-
-/* Samsung Galaxy S3 ----------- */
-@media only screen and (min-device-width: 320px) and (max-device-height: 640px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 2){
-    /* Styles */
-}
-
-@media only screen and (min-device-width: 320px) and (max-device-height: 640px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 2){
-    /* Styles */
-}
-
-/* Samsung Galaxy S4 ----------- */
-@media only screen and (min-device-width: 320px) and (max-device-height: 640px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 3){
-    /* Styles */
-}
-
-@media only screen and (min-device-width: 320px) and (max-device-height: 640px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 3){
-    /* Styles */
-}
-
-/* Samsung Galaxy S5 ----------- */
-@media only screen and (min-device-width: 360px) and (max-device-height: 640px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 3){
-    /* Styles */
-}
-
-@media only screen and (min-device-width: 360px) and (max-device-height: 640px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 3){
-    /* Styles */
-}
 
 
 /* ==========================================================================
