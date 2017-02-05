@@ -48,15 +48,20 @@
 
 		<header class="site-header clearfix">
 			
-			<h1 class="logo"><a href="#">Tieliikenneuudistus</a></h1>
+			<h1 class="logo"><a href="https://www.lvm.fi/etusivu" target="_blank">Tieliikenneuudistus</a></h1>
 
-			<nav class="main-nav">
+			<nav class="topnav" id="myTopnav">
 				<ul>
+					<li> <<img src="site-icon/android-icon-48x48.png" alt="lvm.fi"></li>
+					<li> <a href="index.html">Koti</a>
 					<li> <a href="kansalaisille/index.html">Kansalaisille</a></li>
 					<li> <a href="#">Päättäjille</a></li>
 					<li> <a href="#">Medialle</a></li>
 					<li> <a href="#">EU</a></li>
 					<li> <a href="#">Auto- ja polttoaineala</a></li>
+					<li class="icon">
+    				<a href="javascript:void(0);" onclick="collapse()">&#9776;</a>
+  					</li>
 				</ul>
 			</nav>
 			
@@ -64,8 +69,11 @@
 
 		<main>
 			<section class="billboard">
-				<h2>Otsikko</h2>
+				<div class="splash">
+					<h2>Otsikko</h2>
 				<p>Let's make content!!</p>
+				</div>
+				
 
 			</section>
 		<div class="column-wrapper clearfix">
@@ -90,7 +98,7 @@
 	</body>
 
 	<footer class="main-footer clearfix">
-		<p class="copywrite"> Leevi Lappi&copy; 2017</p>
+		<p class="copywrite"> Leevi Lappi &copy; 2017</p>
 		<ul class="footer-nav clearfix">
 			<li> <a href="#">Yhteystiedot</a></li>
 			<li> <a href="lvm.fi">LVM.fi</a></li>
@@ -98,6 +106,17 @@
 			<li> <a href="#">SP</a></li>
 		</ul>	
 	</footer>
+
+	<script>
+	function collapse() {
+		var x = document.getElementById("myTopnav");
+		if (x.className === "topnav") {
+			x.className += " responsive";
+		} else {
+			x.className = "topnav";
+		}
+	}
+	</script>
 
 
 </html>

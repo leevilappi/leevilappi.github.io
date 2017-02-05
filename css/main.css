@@ -10,7 +10,7 @@
    Base styles: opinionated defaults
    ========================================================================== */
 
-html {
+   html {
     color: #222;
     font-size: 1em;
     line-height: 1.4;
@@ -24,7 +24,7 @@ html {
  * Customize the background color to match your design.
  */
 
-::-moz-selection {
+ ::-moz-selection {
     background: #b3d4fc;
     text-shadow: none;
 }
@@ -38,7 +38,7 @@ html {
  * A better looking default horizontal rule
  */
 
-hr {
+ hr {
     display: block;
     height: 1px;
     border: 0;
@@ -53,12 +53,12 @@ hr {
  * https://github.com/h5bp/html5-boilerplate/issues/440
  */
 
-audio,
-canvas,
-iframe,
-img,
-svg,
-video {
+ audio,
+ canvas,
+ iframe,
+ img,
+ svg,
+ video {
     vertical-align: middle;
 }
 
@@ -66,7 +66,7 @@ video {
  * Remove default fieldset styles.
  */
 
-fieldset {
+ fieldset {
     border: 0;
     margin: 0;
     padding: 0;
@@ -76,7 +76,7 @@ fieldset {
  * Allow only vertical resizing of textareas.
  */
 
-textarea {
+ textarea {
     resize: vertical;
 }
 
@@ -84,7 +84,7 @@ textarea {
    Browser Upgrade Prompt
    ========================================================================== */
 
-.browserupgrade {
+   .browserupgrade {
     margin: 0.2em 0;
     background: #ccc;
     color: #000;
@@ -95,29 +95,111 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
-/* apply a natural box layout model to all elements, but allowing components to change */
-html {
-  box-sizing: border-box;
+   /* apply a natural box layout model to all elements, but allowing components to change */
+   html {
+      box-sizing: border-box;
+  }
+  *, *:before, *:after {
+      box-sizing: inherit;
+  }
+
+
+  /* Remove margins and padding from the list, and add a black background color */
+  .topnav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: #333;
+  }
+
+  /* Float the list items side by side */
+  .topnav ul li {float: left;}
+
+  /* Style the links inside the list items */
+  .topnav ul li a {
+    display: inline-block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 17px;
 }
-*, *:before, *:after {
-  box-sizing: inherit;
+
+/* Change background color of links on hover */
+.topnav ul li a:hover {background-color: #ddd;}
+
+/* Hide the list item that contains the link that should open and close the topnav on small screens */
+.topnav ul li.icon {display: none;}
+
+/* When the screen is less than 680 pixels wide, hide all list items, except for the first one ("Home"). Show the list item that contains the link to open and close the topnav (li.icon) */
+@media screen and (max-width:680px) {
+  .topnav ul li:not(:first-child) {display: none;}
+  .topnav ul li.icon {
+    float: right;
+    display: inline-block;
+}
+
+.site-header h1{
+    display: none;
 }
 
 
+}
 
-.site-header {
-    box-shadow: 0 1px 3px #333;
-    background-color: #eee;
-    white-space: nowrap;
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens */
+@media screen and (max-width:680px) {
+  .topnav.responsive ul {position: relative;}
+  .topnav.responsive ul .icon li {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.topnav.responsive ul li {
+    float: none;
+    display: inline;
+}
+.topnav.responsive ul li a {
+    display: block;
+    text-align: left;
+}
+
+.billboard {
+    height: 300px;
+    background: url(../img/road-min.jpg);
+
 
 }
+
+}
+
+@media only screen and (min-width: 768px) {
 
 .site-header h1{
     margin-top: 0px;
     padding: 10px 5%;
     display: inline-block;
 
+
 }
+
+.billboard {
+    height: 535px;
+    background: url(../img/road-1351x901.jpg);
+
+}
+
+}
+
+.billboard{
+    width: 100%;
+    color: #fff;
+    text-align: center;
+}
+
+
+
 
 .logo a {
     display: block;
@@ -130,97 +212,181 @@ html {
 }
 
 
-.main-nav {
-        display: inline-block;
-        font-size: 18px;
-}
 
-.main-nav ul li {
-    padding-left: 10px;
-}
-
-
-.main-nav ul li a {
-    text-decoration: none;
-    color: #0151a7;
+.splash{
+    padding-top: 25%
 
 }
 
-.main-nav li {
-    display: inline-block; /* to display the menu items as blocks in same line */
-    list-style: none;
-    text-align: center; /* center align the text within the block */
-    vertical-align: middle; /* align the contents to middle vertically */
+    .billboard h2 {
+        margin-top: 0;
+    }
 
+
+    .column-wrapper {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .main-col {
+        float: left;
+        width: 70%;
+    }
+
+    .sidebar-col {
+        float: right;
+        background-color: #ccc;
+        width: 30%;
+        padding: 10px 5%
+    }
+
+
+    .main-footer {
+        border-top: 1px solid #0151a7;
+        background: #222;
+        color: #fff;
+        padding: 20px 5% 10px 5%;
+
+
+    }
+
+    .copywrite{
+        /*display: inline-block;*/
+        float: left;
+
+    }
+
+    .footer-nav {
+        list-style: none;
+        /*display: inline-block;*/
+        float: right;
+    }
+
+    .footer-nav a {
+        color: #fff;
+        text-decoration: none;
+    }
+
+    .footer-nav li {
+        padding-left: 10px;
+        display: inline;
+    }
+
+
+
+
+
+
+
+
+    /* Smartphones (portrait and landscape) ----------- */
+    @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+        /* Styles */
+    }
+
+    /* Smartphones (landscape) ----------- */
+    @media only screen and (min-width : 321px) {
+        /* Styles */
+    }
+
+    /* Smartphones (portrait) ----------- */
+    @media only screen and (max-width : 320px) {
+        /* Styles */
+    }
+
+    /* iPads (portrait and landscape) ----------- */
+    @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+        /* Styles */
+    }
+
+    /* iPads (landscape) ----------- */
+    @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
+        /* Styles */
+    }
+
+    /* iPads (portrait) ----------- */
+    @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
+        /* Styles */
+    }
+/**********
+iPad 3
+**********/
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) and (-webkit-min-device-pixel-ratio : 2) {
+    /* Styles */
 }
 
-.main-nav ul {
-    padding: 0px;
-    margin-top: 30px;
-    text-decoration: none;
-    white-space: nowrap;
-
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) and (-webkit-min-device-pixel-ratio : 2) {
+    /* Styles */
+}
+/* Desktops and laptops ----------- */
+@media only screen  and (min-width : 1224px) {
+    /* Styles */
 }
 
-.billboard {
-    background: #333;
-    color: #fff;
-    text-align: center;
-    padding: 40px;
+/* Large screens ----------- */
+@media only screen  and (min-width : 1824px) {
+    /* Styles */
 }
 
-.billboard h2 {
-    margin-top: 0;
+/* iPhone 4 ----------- */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) and (orientation : landscape) and (-webkit-min-device-pixel-ratio : 2) {
+    /* Styles */
 }
 
-
-.column-wrapper {
-    width: 90%;
-    margin: 0 auto;
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) and (orientation : portrait) and (-webkit-min-device-pixel-ratio : 2) {
+    /* Styles */
 }
 
-.main-col {
-    float: left;
-    width: 70%;
+/* iPhone 5 ----------- */
+@media only screen and (min-device-width: 320px) and (max-device-height: 568px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 2){
+    /* Styles */
 }
 
-.sidebar-col {
-    float: right;
-    background-color: #ccc;
-    width: 30%;
-    padding: 10px 5%
+@media only screen and (min-device-width: 320px) and (max-device-height: 568px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 2){
+    /* Styles */
 }
 
 
-.main-footer {
-    border-top: 1px solid #0151a7;
-    background: #222;
-    color: #fff;
-    padding: 20px 5% 10px 5%;
-    white-space: nowrap;
 
+@media only screen and (min-device-width: 375px) and (max-device-height: 667px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 2){
+    /* Styles */
 }
 
-.copywrite{
-    display: inline-block;
-
+/* iPhone 6+ ----------- */
+@media only screen and (min-device-width: 414px) and (max-device-height: 736px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 2){
+    /* Styles */
 }
 
-.footer-nav {
-    list-style: none;
-    display: inline-block;
+@media only screen and (min-device-width: 414px) and (max-device-height: 736px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 2){
+    /* Styles */
 }
 
-.footer-nav a {
-    color: #fff;
-    text-decoration: none;
+/* Samsung Galaxy S3 ----------- */
+@media only screen and (min-device-width: 320px) and (max-device-height: 640px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 2){
+    /* Styles */
 }
 
-.footer-nav li {
-    padding-left: 10px;
-    display: inline;
+@media only screen and (min-device-width: 320px) and (max-device-height: 640px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 2){
+    /* Styles */
 }
 
+/* Samsung Galaxy S4 ----------- */
+@media only screen and (min-device-width: 320px) and (max-device-height: 640px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 3){
+    /* Styles */
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-height: 640px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 3){
+    /* Styles */
+}
+
+/* Samsung Galaxy S5 ----------- */
+@media only screen and (min-device-width: 360px) and (max-device-height: 640px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 3){
+    /* Styles */
+}
+
+@media only screen and (min-device-width: 360px) and (max-device-height: 640px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 3){
+    /* Styles */
+}
 
 
 /* ==========================================================================
@@ -231,7 +397,7 @@ html {
  * Hide visually and from screen readers
  */
 
-.hidden {
+ .hidden {
     display: none !important;
 }
 
@@ -240,7 +406,7 @@ html {
  * http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
  */
 
-.visuallyhidden {
+ .visuallyhidden {
     border: 0;
     clip: rect(0 0 0 0);
     height: 1px;
@@ -257,8 +423,8 @@ html {
  * https://www.drupal.org/node/897638
  */
 
-.visuallyhidden.focusable:active,
-.visuallyhidden.focusable:focus {
+ .visuallyhidden.focusable:active,
+ .visuallyhidden.focusable:focus {
     clip: auto;
     height: auto;
     margin: 0;
@@ -271,7 +437,7 @@ html {
  * Hide visually and from screen readers, but maintain layout
  */
 
-.invisible {
+ .invisible {
     visibility: hidden;
 }
 
@@ -287,8 +453,8 @@ html {
  *    `:before` to contain the top-margins of child elements.
  */
 
-.clearfix:before,
-.clearfix:after {
+ .clearfix:before,
+ .clearfix:after {
     content: " "; /* 1 */
     display: table; /* 2 */
 }
@@ -303,14 +469,14 @@ html {
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
+   @media only screen and (min-width: 35em) {
     /* Style adjustments for viewports that meet the condition */
 }
 
 @media print,
-       (-webkit-min-device-pixel-ratio: 1.25),
-       (min-resolution: 1.25dppx),
-       (min-resolution: 120dpi) {
+(-webkit-min-device-pixel-ratio: 1.25),
+(min-resolution: 1.25dppx),
+(min-resolution: 120dpi) {
     /* Style adjustments for high resolution devices */
 }
 
@@ -320,7 +486,7 @@ html {
    http://www.phpied.com/delay-loading-your-print-css/
    ========================================================================== */
 
-@media print {
+   @media print {
     *,
     *:before,
     *:after,
@@ -328,7 +494,7 @@ html {
     *:first-line {
         background: transparent !important;
         color: #000 !important; /* Black prints faster:
-                                   http://www.sanbeiji.com/archives/953 */
+        http://www.sanbeiji.com/archives/953 */
         box-shadow: none !important;
         text-shadow: none !important;
     }
@@ -351,8 +517,8 @@ html {
      * or use the `javascript:` pseudo protocol
      */
 
-    a[href^="#"]:after,
-    a[href^="javascript:"]:after {
+     a[href^="#"]:after,
+     a[href^="javascript:"]:after {
         content: "";
     }
 
@@ -367,7 +533,7 @@ html {
      * http://css-discuss.incutio.com/wiki/Printing_Tables
      */
 
-    thead {
+     thead {
         display: table-header-group;
     }
 
