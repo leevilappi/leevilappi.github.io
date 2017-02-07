@@ -8,9 +8,10 @@
 	<meta name="description" content="Practice page"/>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<link rel="stylesheet" href="../css/normalize.css">
-	<link rel="stylesheet" href="../css/main.css">
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/main.css">
 
+	<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
 
 	<!-- Site icons -->
 
@@ -32,6 +33,31 @@
 	<meta name="msapplication-TileImage" content="site-icon/ms-icon-144x144.png">
 	<meta name="theme-color" content="#ffffff">
 
+	<script src="scripts/jquery-3.1.1.min.js"></script>
+	<script src="scripts/typed.js"></script>
+
+	<script>
+		  $(function(){
+		      $(".typed-element").typed({
+		        strings: ["hyödyttää sinua.", "pelastaa Suomen tiestön."],
+		        typeSpeed: 20,
+		        loop: true
+		      });
+		  });
+	</script>
+
+	<script>
+		function collapse() {
+			var x = document.getElementById("myTopnav");
+			if (x.className === "topnav") {
+				x.className += " responsive";
+			} else {
+				x.className = "topnav";
+			}
+		}
+	</script>
+
+
 
 	<title>Tieliikenneuudistus</title>
 
@@ -46,44 +72,52 @@
 		
 		
 
-		<header class="site-header">
+		<header class="site-header clearfix">
 			
-			<h1 class="logo"><a href="#">Tieliikenneuudistus</a></h1>
-
-			<nav class="main-nav">
+		<!-- 	<h1 class="logo"><a href="https://www.lvm.fi/etusivu" target="_blank">Tieliikenneuudistus</a></h1>
+ -->
+			<nav class="topnav" id="myTopnav">
 				<ul>
+					<li> <img src="site-icon/android-icon-48x48.png" alt="lvm.fi"></li>
+					<li> <a href="index.html">Koti</a>
 					<li> <a href="kansalaisille/index.html">Kansalaisille</a></li>
 					<li> <a href="#">Päättäjille</a></li>
 					<li> <a href="#">Medialle</a></li>
 					<li> <a href="#">EU</a></li>
 					<li> <a href="#">Auto- ja polttoaineala</a></li>
+					<li class="icon">
+    				<a href="javascript:void(0);" onclick="collapse()">&#9776;</a>
+  					</li>
 				</ul>
 			</nav>
 			
 		</header>
 
 		<main>
+			<section class="billboard">
+				<div id="main-splash">
+					<h2>Kansalaisille</h2>
+					<span class="typed-element">.</span>
+				</div>
+			</section>
 
-			<h2>Kansalaisille</h2>
+		
+			
 
 		</main>
 
-
-
-
-
-
-
-
 	</body>
 
-
-	<div class="gap-10"></div>
-
-	<footer>
-		<hr style="width: 100%">
-		<p><b>&#169; Leevi Lappi </b></p>
+	<footer class="main-footer clearfix">
+		<p class="copywrite"> Leevi Lappi &copy; 2017</p>
+		<ul class="footer-nav clearfix">
+			<li> <a href="#">Yhteystiedot</a></li>
+			<li id="lvm-icon"> <a href="https://www.lvm.fi/" target="_blank"><img src="site-icon/android-icon-48x48.png"></a></li>
+			<li> <a href="#"><i class="fa fa-facebook-square" aria-hidden="true"></i></a></li>
+			<li> <a href="#"><i class="fa fa-snapchat-square" aria-hidden="true"></i></a></li>
+		</ul>	
 	</footer>
+
 
 
 </html>

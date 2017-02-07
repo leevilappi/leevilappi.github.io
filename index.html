@@ -33,6 +33,31 @@
 	<meta name="msapplication-TileImage" content="site-icon/ms-icon-144x144.png">
 	<meta name="theme-color" content="#ffffff">
 
+	<script src="scripts/jquery-3.1.1.min.js"></script>
+	<script src="scripts/typed.js"></script>
+
+	<script>
+		  $(function(){
+		      $(".typed-element").typed({
+		        strings: ["hyödyttää sinua.", "pelastaa Suomen tiestön."],
+		        typeSpeed: 20,
+		        loop: true
+		      });
+		  });
+	</script>
+
+	<script>
+		function collapse() {
+			var x = document.getElementById("myTopnav");
+			if (x.className === "topnav") {
+				x.className += " responsive";
+			} else {
+				x.className = "topnav";
+			}
+		}
+	</script>
+
+
 
 	<title>Tieliikenneuudistus</title>
 
@@ -55,7 +80,7 @@
 				<ul>
 					<li> <img src="site-icon/android-icon-48x48.png" alt="lvm.fi"></li>
 					<li> <a href="index.html">Koti</a>
-					<li> <a href="kansalaisille/index.html">Kansalaisille</a></li>
+					<li> <a href="kansalaisille.html">Kansalaisille</a></li>
 					<li> <a href="#">Päättäjille</a></li>
 					<li> <a href="#">Medialle</a></li>
 					<li> <a href="#">EU</a></li>
@@ -70,13 +95,12 @@
 
 		<main>
 			<section class="billboard">
-				<div class="main-splash">
+				<div id="main-splash">
 					<h2>Tieliikenneuudistus</h2>
-				<p>Let's make content!!</p>
+					<span class="typed-element">.</span>
 				</div>
-				
-
 			</section>
+
 		<div class="column-wrapper clearfix">
 			<section class="col">
 				<i class="fa fa-road fa-4x"> </i>
@@ -98,6 +122,33 @@
 				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ultrices fringilla magna ut consequat. Nunc vulputate turpis sed massa mol.</p>
 			</section>
 			
+			
+		</div>
+
+		<section class="billboard">
+				<div id="second-splash">
+					<h2>Lyhyesti</h2>
+				<div> Mitä tämä tarkoittaa sinulle?</div>
+				</div>
+		</section>
+
+		<div class="column-wrapper clearfix">
+			<section class="col info-col">
+				<p class="p-link">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ultrices fringilla magna ut consequat. Nunc vulputate turpis sed massa mol. <a href="#">Lue lisää</a></p>
+			</section>
+		</div>
+
+		<section class="billboard">
+				<div id="third-splash">
+					<h2>Yhteiskunta</h2>
+				<div> Miten tämä vaikuttaa Suomeen?</div>
+				</div>
+		</section>
+
+		<div class="column-wrapper clearfix">
+			<section class="col">
+				<p class="p-link">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ultrices fringilla magna ut consequat. Nunc vulputate turpis sed massa mol. <a href="#">Lue lisää</a></p>
+			</section>
 		</div>
 			
 
@@ -115,16 +166,6 @@
 		</ul>	
 	</footer>
 
-	<script>
-	function collapse() {
-		var x = document.getElementById("myTopnav");
-		if (x.className === "topnav") {
-			x.className += " responsive";
-		} else {
-			x.className = "topnav";
-		}
-	}
-	</script>
 
 
 </html>
