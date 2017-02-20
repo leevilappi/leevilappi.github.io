@@ -79,9 +79,9 @@
 			<nav class="topnav" id="myTopnav">
 				<ul>
 					<li> <img src="site-icon/android-icon-48x48.png" alt="lvm.fi"></li>
-					<li> <a href="index.html">Koti</a>
+					<li> <a href="index.html" class="active" >Koti</a>
 					<li> <a href="kansalaisille.html">Kansalaisille</a></li>
-					<li> <a href="404.html">Päättäjille</a></li>
+					<li> <a href="paattajille.html">Päättäjille</a></li>
 					<li> <a href="404.html">Medialle</a></li>
 					<li> <a href="404.html">EU</a></li>
 					<li> <a href="404.html">Auto- ja polttoaineala</a></li>
@@ -94,7 +94,7 @@
 		</header>
 
 		<main>
-			<section class="billboard">
+			<section>
 				<div id="main-splash">
 					<h2>Tieliikenneuudistus</h2>
 					<span class="typed-element">.</span>
@@ -102,21 +102,21 @@
 			</section>
 
 		<div class="column-wrapper clearfix">
-			<section class="col">
+			<section class="info-col">
 				<i class="fa fa-road fa-4x"> </i>
 				<h3>Miksi?</h3>
 				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ultrices fringilla magna ut consequat. Nunc vulputate turpis sed massa mol.</p>
 
 			</section>
 
-			<section class="col">
+			<section class="info-col">
 				<i class="fa fa-car fa-4x"> </i>
 				<h3>Miten?</h3>
 				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ultrices fringilla magna ut consequat. Nunc vulputate turpis sed massa mol.</p>
 
 			</section>
 
-			<section class="col">
+			<section class="info-col">
 				<i class="fa fa-eur fa-4x"> </i>
 				<h3>Mitä?</h3>
 				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ultrices fringilla magna ut consequat. Nunc vulputate turpis sed massa mol.</p>
@@ -125,27 +125,29 @@
 			
 		</div>
 
-		<section class="billboard">
+
+		<div class="wrapper">
+		<section class="second-wrapper billboard">
 				<div id="second-splash">
 					<h2>Lyhyesti</h2>
 				<div> Mitä tämä tarkoittaa sinulle?</div>
 				</div>
 		</section>
 
-		<div class="column-wrapper clearfix">
-			<section class="col info-col">
+		<div class="second-wrapper clearfix">
+			<section class="col">
 				<p class="p-link">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ultrices fringilla magna ut consequat. Nunc vulputate turpis sed massa mol. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ultrices fringilla magna ut consequat. Nunc vulputate turpis sed massa mol.</p>
 			</section>
 		</div>
 
-		<section class="billboard">
+		<section class="second-wrapper billboard">
 				<div id="third-splash">
 					<h2>Yhteiskunta</h2>
 				<div> Miten tämä vaikuttaa Suomeen?</div>
 				</div>
 		</section>
 
-		<div class="column-wrapper clearfix">
+		<div class="second-wrapper clearfix">
 			<section class="col">
 				<p class="p-link">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ultrices fringilla magna ut consequat. Nunc vulputate turpis sed massa mol. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ultrices fringilla magna ut consequat. Nunc vulputate turpis sed massa mol. <a href="#">Lue lisää</a></p>
 			</section>
@@ -154,12 +156,13 @@
 		<section class="billboard">
 				<div id="fourth-splash">
 					<h2>Uutiset</h2>
-			
 				</div>
 		</section>
 
-		<div class="column-wrapper clearfix">
-			<section class="col feed">
+		
+
+		<div class="clearfix">
+			<section class="col-feed">
 				<div class="snippet">
 				<img src="img/uutiskuva.png">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ultrices fringilla magna ut consequat. Nunc vulputate turpis sed massa mol. <a href="#">Lue lisää</a></div>
 
@@ -174,14 +177,16 @@
 			</div>
 		</div>
 			
+		</div>
 
 		</main>
 
 	</body>
 
 	<footer class="main-footer clearfix">
-		<p class="copywrite"> Leevi Lappi &copy; 2017</p>
+		<!-- <span class="copywrite"> Leevi Lappi &copy; 2017</span> -->
 		<ul class="footer-nav clearfix">
+			<li> Leevi Lappi &copy; 2017 <li>
 			<li> <a href="#">Yhteystiedot</a></li>
 			<li id="lvm-icon"> <a href="https://www.lvm.fi/" target="_blank"><img src="site-icon/android-icon-48x48.png"></a></li>
 			<li> <a href="https://www.facebook.com/lvmfi"><i class="fa fa-facebook-square" aria-hidden="true"></i></a></li>

@@ -98,19 +98,10 @@
    /* apply a natural box layout model to all elements, but allowing components to change */
    html {
       box-sizing: border-box;
-  }
-  *, *:before, *:after {
-      box-sizing: inherit;
-  }
-
-
-  .billboard{
-    width: 100%;
-    opacity: 0.8;
-    color: #fff;
-    text-align: center;
-    background-color: white;
-  }
+    }
+    *, *:before, *:after {
+        box-sizing: inherit;
+    }
 
   .p-link a {
     text-decoration: none;
@@ -122,9 +113,9 @@
     color: blue;
   }
 
-
-
-
+  .topnav ul li a:active {
+    text-decoration: underline;
+  }
 
   /* Remove margins and padding from the list, and add a black background color */
   .topnav ul {
@@ -137,6 +128,10 @@
 
   /* Float the list items side by side */
   .topnav ul li {float: left;}
+
+  .topnav ul li.active-link>a {
+    background-color: white;
+  }
 
   /* Style the links inside the list items */
   .topnav ul li a {
@@ -174,7 +169,6 @@
 /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens */
 @media screen and (max-width:680px) {
 
-
   .topnav.responsive ul {position: relative;}
   .topnav.responsive ul .icon li {
     position: absolute;
@@ -196,11 +190,38 @@
 
   }
 
+  .column-wrapper {
+    width: 90%;
+    background-color: white;
+    margin: 0 auto;
+    border: 1px solid black;
+  }
+
+
+  .billboard{
+    width: 100%;
+    opacity: 0.8;
+    color: #fff;
+    text-align: center;
+    background-color: white;
+  }
+
+  .col, .info-col {
+    padding-top: 20px;
+    text-align: center;
+    /*border: 1px solid Black;*/
+  }
+
   #main-splash{
       padding-top: 25%;
       height: 300px;
       background: url(../img/kuva-1-min.png);
-      /*filter: brightness(80%);*/
+      background-position: center;
+      opacity: 0.8;
+      color: #fff;
+      text-align: center;
+      background-color: white;
+      background-position: center;
   }
 
   #second-splash {
@@ -267,43 +288,165 @@
     color: black;
   }
 
+  #side-splash{
+      padding-top: 28%;
+      height: 300px;
+      background: url(../img/kuva-1-min.png);
+      /*filter: brightness(80%);*/
+  }
 
+  .footer-nav {
+    list-style: none;
+    /*display: inline-block;*/
+  }
 
+  .footer-nav a {
+      color: #fff;
+      text-decoration: none;
+  }
+
+  .footer-nav li {
+      
+      padding-left: 5px
+  }
+
+  .footer-nav ul {
+    float: right;
+  }
+
+  .main-footer {
+    border-top: 1px solid #0151a7;
+    background: #222;
+    color: #fff;
+    padding: 20px 5% 10px 5%;
+    /*display: inline-block;*/
+}
 
 }
 
 /*Desktop screens!*/
 @media only screen and (min-width: 768px) {
 
-    .site-header h1{
-        margin-top: 0px;
-        padding: 10px 5%;
-        display: inline-block;
-    }
+  .typed-element {
+      font-size: 20px;
+      font-weight: bold;
 
-    .topnav ul li:not(:first-child){
-        float: right;
-    } 
+  }
+
+  .wrapper {
+  -webkit-column-count: 2;
+  column-count: 2;
+  /*border-style: 1px solid black;*/
+  }
+
+  #main-splash{
+      padding-top: 17.5%;
+      height: 500px;
+      background: url(../img/kuva-1.png) no-repeat;
+      background-position: center;
+      opacity: 0.8;
+      color: #fff;
+      text-align: center;
+      background-color: white;
+      background-position: center;
+  }
 
 
-    .billboard {
-        height: 600px;
-        background: url(../img/road-1351x901.jpg);
 
-    }
+  #second-splash {
+      background: url(../img/kuva-2-min.png) no-repeat;
+      padding-top: 10%;
+      opacity: 0.8;
+      max-width: 100%;
+      height: 150px;
+      margin-left: 12.5%;
 
-    #main-splash{
-      padding-top: 25%;
+  }
 
+  #third-splash {
+      background: url(../img/kuva-3-min.png) no-repeat;
+      padding-top: 10%;
+      opacity: 0.8;
+      max-width: 100%;
+      height: 150px;
+      margin-left: 12.5%;
+  }
 
-    }
+  #fourth-splash{
+      background: url(../img/kuva-4-min.png) no-repeat;
+      padding-top: 15%;
+      opacity: 0.8;
+      max-width: 100%;
+      height: 150px;
+      margin-left: 12.5%;
+      /*float:right;*/
+  }
 
-    #second-splash{
-      padding-top: 10%
+  .billboard{
+    color: #fff;
+    text-align: center;
+    background-color: white;
+    background-position: center;
+  }
 
-    }
+  .info-col{
+    width: 30%;
+    margin: 5% 1.5%;
+    float: left;
+    padding-top: 20px;
+    text-align: center;
+  }
 
-}
+  .info-col p {
+    text-align: justify;
+  }
+
+  .snippet {
+      border: 1px solid #D4D4D4;
+      border-bottom: 2px solid #212121;
+      text-align: left;
+      padding: 10px;
+      margin-bottom: 5px;
+  }
+
+  .snippet img{
+      width: 64px;
+      height: 64px;
+      float: left;
+      padding: 1px;
+      margin-right: 10px;
+  }
+
+  .snippet a {
+    text-decoration: none;
+    color: grey;
+  }
+
+  .snippet a: hover{
+    text-decoration: underline;
+    color: blue;
+  }
+
+  .button-continue{
+    margin: 0 50% 20px 50%;
+  }
+
+  .fa-ellipsis-h {
+    color: grey;
+  }
+
+  .fa-ellipsis-h:hover {
+    background-color: grey;
+    color: black;
+  }
+
+  #side-splash{
+      padding-top: 28%;
+      height: 300px;
+      background: url(../img/kuva-1-min.png);
+      /*filter: brightness(80%);*/
+  }
+
 
 
 .topnav ul li:first-child{
@@ -311,25 +454,8 @@
 } 
 
 
-
-
-
 .billboard h2 {
     margin-top: 0;
-}
-
-
-.column-wrapper {
-    width: 90%;
-    background-color: white;
-    margin: 0 auto;
-    /*border: 1px solid black;*/
-}
-
-.col {
-    padding-top: 20px;
-    text-align: center;
-    /*border: 1px solid Black;*/
 }
 
 
@@ -363,8 +489,6 @@
     /*display: inline-block;*/
 }
 
-
-
 .footer-nav a {
     color: #fff;
     text-decoration: none;
@@ -374,6 +498,8 @@
     float: left;
     padding-left: 5px
 }
+
+
 
 
 
