@@ -197,7 +197,6 @@
     width: 90%;
     background-color: white;
     margin: 0 auto;
-    /*border: 1px solid black;*/
   }
 
 
@@ -394,9 +393,10 @@
 
   .info-col{
     width: 30%;
+    padding: 50px;
     margin: 5% 1.5%;
     float: left;
-    padding-top: 20px;
+/*    padding-top: 20px;*/
     text-align: center;
   }
 
