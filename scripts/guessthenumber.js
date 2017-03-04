@@ -16,7 +16,7 @@ function guessTheNumber() {
   
   // alert("Your guess is: " + guess + " computerNumber is: " + computerNumber + " =" + compareNumbers(computerNumber, guess) );
 
-  if(guess < 10 && guess > 1) {
+  if(guess <= 10 && guess >= 1) {
 
     if(compareNumbers(guess, computerNumber)) {
   	alert("Your guess was correct! New number generated.");
