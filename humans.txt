@@ -3,11 +3,11 @@
 
 # TEAM
 
-    <name> -- <role> -- <twitter>
+    Creator: Leevi Lappi, Aalto University, 2017
 
 # THANKS
 
-    <name>
+    VJP course assistants
 
 # TECHNOLOGY COLOPHON
 
