@@ -329,7 +329,7 @@
 @media only screen and (min-width: 768px) {
 
   .typed-element {
-      font-size: 20px;
+      font-size: 40px;
       font-weight: bold;
 
   }
@@ -342,7 +342,8 @@
   }
 
   #main-splash{
-      padding-top: 17.5%;
+      padding-top: 9.5%;
+      font-size: 40px;
       height: 500px;
       background: url(../img/kuva-1.png) no-repeat;
       background-position: center;
