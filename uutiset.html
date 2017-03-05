@@ -35,6 +35,7 @@
 
 	<script src="scripts/jquery-3.1.1.min.js"></script>
 	<script src="scripts/typed.js"></script>
+	<script src="scripts/slideshow.js"></script>
 
 	<script>
 		  $(function(){
@@ -94,88 +95,21 @@
 		</header>
 
 		<main>
-			<section>
-				<div id="main-splash">
-					<h2>Tieliikenneuudistus</h2>
-					<span class="typed-element">.</span>
-				</div>
-			</section>
 
-		<div class="column-wrapper clearfix">
-			<section class="info-col">
-				<i class="fa fa-road fa-4x"> </i>
-				<h3>Miksi?</h3>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ultrices fringilla magna ut consequat. Nunc vulputate turpis sed massa mol.</p>
-
-			</section>
-
-			<section class="info-col">
-				<i class="fa fa-car fa-4x"> </i>
-				<h3>Miten?</h3>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ultrices fringilla magna ut consequat. Nunc vulputate turpis sed massa mol.</p>
-
-			</section>
-
-			<section class="info-col">
-				<i class="fa fa-eur fa-4x"> </i>
-				<h3>Mitä?</h3>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ultrices fringilla magna ut consequat. Nunc vulputate turpis sed massa mol.</p>
-			</section>
-			
-			
-		</div>
-
-
-		<div class="wrapper">
-		<section class="second-wrapper billboard">
-				<div id="second-splash">
-					<h2>Lyhyesti</h2>
-				<div> Mitä tämä tarkoittaa sinulle?</div>
-				</div>
-		</section>
-
-		<div class="second-wrapper clearfix">
-			<section class="col">
-				<p class="p-link">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ultrices fringilla magna ut consequat. Nunc vulputate turpis sed massa mol. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-			</section>
-		</div>
-
-		<section class="second-wrapper billboard">
-				<div id="third-splash">
-					<h2>Yhteiskunta</h2>
-				<div> Miten tämä vaikuttaa Suomeen?</div>
-				</div>
-		</section>
-
-		<div class="second-wrapper clearfix">
-			<section class="col">
-				<p class="p-link">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ultrices fringilla magna ut consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. <a href="#">Lue lisää</a></p>
-			</section>
-		</div>
-
-		<section class="billboard">
-				<div id="fourth-splash">
-					<h2>Uutiset</h2>
-				</div>
-		</section>
-
-		
-
-		<div class="clearfix">
-			<section class="col-feed">
-				<div class="snippet">
-				<img src="img/uutiskuva.png" alt="image could not load">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ultrices fringilla magna ut consequat. Nunc vulputate turpis sed massa mol. <a href="#">Lue lisää</a></div>
-
-				<div class="snippet">
-				<img src="img/uutiskuva.png">
-				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ultrices fringilla magna ut consequat. Nunc vulputate turpis sed massa mol. <a href="#">Lue lisää</a></div>
-
-				<div class="snippet"><img src="img/uutiskuva.png">orem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ultrices fringilla magna ut consequat. Nunc vulputate turpis sed massa mol. <a href="#">Lue lisää</a></div>
-			</section>
-			<div class="button-continue">
-			<a href="#"><i class="fa fa-ellipsis-h" aria-hidden="true"></i></a>
-			</div>
-		</div>
+        <section class="clearfix">
+            <div class="news">
+                <div id="snippet" class="">
+                    <div id="controlpanel">
+                        <span><button type="button" id="previous"><i class="fa fa-arrow-left" aria-hidden="true"></i></button></span>
+                        <span><button type="button" id="playbutton"><i class="fa fa-pause" aria-hidden="true"></i></button></span>
+                        <span><button type="button" id="next"><i class="fa fa-arrow-right" aria-hidden="true"></i></button></span>
+                    </div>
+                    <div id="newsHeadline"></div>
+                    <div id="newsContent"></div>
+                    <div id="newsDate"></div>
+                </div>
+            </div>
+        </section>
 			
 		</div>
 
@@ -193,6 +127,20 @@
 	</footer>
 
 	</body>
+
+
+<script src="https://www.gstatic.com/firebasejs/3.7.0/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyBnYdi8_9IGy2Uts7t-l3X8sKl6ICXFgeM",
+    authDomain: "app-name-98424.firebaseapp.com",
+    databaseURL: "https://app-name-98424.firebaseio.com",
+    storageBucket: "app-name-98424.appspot.com",
+    messagingSenderId: "376403135312"
+  };
+  firebase.initializeApp(config);
+</script>
 
 
 
