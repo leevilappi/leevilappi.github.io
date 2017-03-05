@@ -35,6 +35,7 @@
 
 	<script src="scripts/jquery-3.1.1.min.js"></script>
 	<script src="scripts/typed.js"></script>
+	<script src="scripts/slideshow.js"></script>
 
 	<script>
 		  $(function(){
@@ -147,9 +148,9 @@
 				</div>
 		</section>
 
-		<div class="second-wrapper clearfix">
+		<div class="second-wrapper clearfix" id="second-text">
 			<section class="col">
-				<p class="p-link">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ultrices fringilla magna ut consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. <a href="#">Lue lisää</a></p>
+				<p class="p-link">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ultrices fringilla magna ut consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. <a href="#">Lue lisää</a></p>
 			</section>
 		</div>
 
@@ -163,7 +164,7 @@
 
 		<div class="clearfix">
 			<section class="col-feed">
-				<div class="snippet">
+				<!-- <div class="snippet">
 				<img src="img/uutiskuva.png" alt="image could not load">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ultrices fringilla magna ut consequat. Nunc vulputate turpis sed massa mol. <a href="#">Lue lisää</a></div>
 
 				<div class="snippet">
@@ -173,7 +174,20 @@
 				<div class="snippet"><img src="img/uutiskuva.png">orem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ultrices fringilla magna ut consequat. Nunc vulputate turpis sed massa mol. <a href="#">Lue lisää</a></div>
 			</section>
 			<div class="button-continue">
-			<a href="#"><i class="fa fa-ellipsis-h" aria-hidden="true"></i></a>
+			<a href="#"><i class="fa fa-ellipsis-h" aria-hidden="true"></i></a> -->
+            <div id="news">
+                <div  id="news-holder">
+                    <div id="controlpanel">
+                        <span><button type="button" id="previous"><i class="fa fa-arrow-left" aria-hidden="true"></i></button></span>
+                        <span><button type="button" id="playbutton"><i class="fa fa-pause" aria-hidden="true"></i></button></span>
+                        <span><button type="button" id="next"><i class="fa fa-arrow-right" aria-hidden="true"></i></button></span>
+                    </div>
+                    <div id="newsHeadline"></div>
+                    <div id="newsContent"></div>
+                    <div id="newsDate"></div>
+                </div>
+            </div>
+        </section>
 			</div>
 		</div>
 			

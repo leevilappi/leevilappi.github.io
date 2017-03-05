@@ -358,6 +358,7 @@
   #second-splash {
       background: url(../img/kuva-2.png) no-repeat;
       padding-top: 7.5%;
+      padding-right: 14%;
       opacity: 0.8;
       max-width: 100%;
       height: 150px;
@@ -368,6 +369,7 @@
   #third-splash {
       background: url(../img/kuva-3.png) no-repeat;
       padding-top: 7.5%;
+      padding-right: 14%;
       opacity: 0.8;
       max-width: 100%;
       height: 150px;
@@ -377,7 +379,7 @@
   #fourth-splash{
       background: url(../img/kuva-4.png) no-repeat;
       padding-top: 10%;
-      padding-right: 40px;
+      padding-right: 22.5%;
       opacity: 0.8;
       max-width: 100%;
       height: 150px;
@@ -513,13 +515,24 @@
 
   #controlpanel{
     margin: 10px 30% 0 30%;
-    padding-left: 30px;
+    padding-left: 8%;
   }
 
-  #snippet{
-    margin: 0 30%;
-    border-style: solid;
+/*  #playbutton:before {
+    font-family: FontAwesome;
+    content: "\f04c";
+  }*/
+
+  #news {
+    margin: 10px 0;
+    border: 4px solid #333;
+    /*height: 500px;*/
   }
+
+  #news-holder {
+    height: 320px;
+  }
+
 
   #newsHeadline{
     font-weight: 600;
@@ -531,7 +544,7 @@
 
   #newsDate {
     text-align: right;
-    padding: 0 20px 5px 0;
+    padding: 0 20px 20px 0;
   }
 
 }

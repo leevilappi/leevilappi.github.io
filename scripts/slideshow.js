@@ -28,7 +28,8 @@ function playSlides() {
     $("#newsHeadline").html(content.news[localStorage.clickcount].headline);
     $("#newsContent").html(content.news[localStorage.clickcount].article);
     $("#newsDate").html(content.news[localStorage.clickcount].date);
-    
+
+    $("#news").fadeIn(slow)
     document.getElementById("newsArticle").style.backgroundImage = (content.news[localStorage.clickcount].image);
 }
     
@@ -36,12 +37,12 @@ function pause() {
     if (isPlaying) {
         clearInterval(nextOne);
         isPlaying = false;
-        document.getElementById("pause").innerHTML = "PLAY";
+        // document.getElementById("#playbutton:before").style.content = "\f04b";
     }
     else {
         isPlaying = true;
         nextOne = window.setInterval(function(){playSlides()},3000);
-        document.getElementById("pause").innerHTML = "PAUSE";
+        // document.getElementById("#playbutton:before").style.content = "\f04c";
     }
 }
     
@@ -63,6 +64,10 @@ function previous() {
     $("#newsDate").html(content.news[localStorage.clickcount].date);
     document.getElementById("newsArticle").style.backgroundImage = (content.news[localStorage.clickcount].image);
 }
+
+$("#playbutton").click(function(){
+    $(this).find('i').toggleClass('fa-play fa-pause')
+});
     
     
  
