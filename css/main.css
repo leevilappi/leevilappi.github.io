@@ -321,7 +321,32 @@
     background: #222;
     color: #fff;
     /*padding: 20px 5% 10px 5%;*/
-}
+  }
+
+  
+  #controlpanel{
+    margin: 10px 30% 0 30%;
+    padding-left: 12%;
+  }
+
+
+  #news {
+    margin: 10px 0;
+    border: 4px solid #333;
+  }
+
+  #newsHeadline{
+    font-weight: 600;
+  }
+
+  #newsHeadline, #newsContent {
+    padding: 5px 10px;
+  }
+
+  #newsDate {
+    text-align: right;
+    padding: 0 20px 20px 0;
+  }
 
 }
 
