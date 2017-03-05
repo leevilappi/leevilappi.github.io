@@ -29,7 +29,7 @@ function playSlides() {
     $("#newsContent").html(content.news[localStorage.clickcount].article);
     $("#newsDate").html(content.news[localStorage.clickcount].date);
 
-    $("#news").fadeIn(slow)
+    $("#news").fadeIn(slow);
     document.getElementById("newsArticle").style.backgroundImage = (content.news[localStorage.clickcount].image);
 }
     
@@ -66,7 +66,7 @@ function previous() {
 }
 
 $("#playbutton").click(function(){
-    $(this).find('i').toggleClass('fa-play fa-pause')
+    $(this).find('i').toggleClass('fa-play fa-pause');
 });
     
     
@@ -74,4 +74,4 @@ $("#playbutton").click(function(){
     
     
     
-}
+};
