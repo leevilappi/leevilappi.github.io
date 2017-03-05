@@ -37,12 +37,10 @@ function pause() {
     if (isPlaying) {
         clearInterval(nextOne);
         isPlaying = false;
-        // document.getElementById("#playbutton:before").style.content = "\f04b";
     }
     else {
         isPlaying = true;
         nextOne = window.setInterval(function(){playSlides()},3000);
-        // document.getElementById("#playbutton:before").style.content = "\f04c";
     }
 }
     
