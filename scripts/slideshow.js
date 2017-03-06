@@ -28,8 +28,6 @@ function playSlides() {
     $("#newsHeadline").html(content.news[localStorage.clickcount].headline);
     $("#newsContent").html(content.news[localStorage.clickcount].article);
     $("#newsDate").html(content.news[localStorage.clickcount].date);
-
-    $("#news").fadeIn(slow);
     document.getElementById("newsArticle").style.backgroundImage = (content.news[localStorage.clickcount].image);
 }
     
