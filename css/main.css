@@ -364,6 +364,7 @@
   column-count: 2;
   margin-bottom: 50px;
   /*border-style: 1px solid black;*/
+  margin-top: 50px;
   }
 
   #main-splash{
@@ -485,6 +486,20 @@
           padding-left: 20px;
   } 
 
+  .video-wrapper video{
+    margin: -75px 20% 50px 20%;
+    margin-top: 10px;
+  }
+
+  .video-wrapper article {
+    background-color: #333333
+  }
+
+  .video-wrapper h2 {
+    padding-left: 37.5%;
+    padding-top: 20px;
+    color: white;
+  }
 
   .billboard h2 {
       margin-top: 0;
