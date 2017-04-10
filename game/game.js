@@ -95,12 +95,16 @@ $(document).ready(function () {
 		}
 		if (49 in keysDown) { // Player holding right
 			player.speed = 256;
+			reset();
 		}
 		if (50 in keysDown) { // Player holding right
 			player.speed = 128;
+			reset();
 		}
 		if (51 in keysDown) { // Player holding right
 			player.speed = 64;
+			reset();
+			
 		if (72 in keysDown) { // Player holding right
 			showHelp();
 		 }
