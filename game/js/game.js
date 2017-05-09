@@ -50,8 +50,12 @@ var loadState = {
 
 		//Load UI sprites
 		game.load.spritesheet('soundOnOff','assets/pictures/UI-sprites/soundOnOff.png', 48, 48, 2, 5, 10);
-		game.load.image('ui-menu', 'assets/pictures/UI-sprites/ui-menu.png');
-		game.load.image('ui-cross', 'assets/pictures/UI-sprites/ui-cross.png');
+		game.load.image('ui-pause', 'assets/pictures/UI-sprites/flatDark13.png');
+		game.load.image('ui-play', 'assets/pictures/UI-sprites/flatDark15.png');
+		game.load.image('ui-settings', 'assets/pictures/UI-sprites/flatDark21.png');
+		game.load.image('ui-check', 'assets/pictures/UI-sprites/flatDark22.png');
+		game.load.image('ui-menu', 'assets/pictures/UI-sprites/flatDark32.png');
+		game.load.image('ui-cross', 'assets/pictures/UI-sprites/flatDark34.png');
 		
 		
 		//Load powerups
@@ -274,7 +278,7 @@ var level1State = {
 		marks.enableBody = true;
 		drinks.enableBody = true;
 
-		text = game.add.text(650, 24, "Score: 0", {
+		text = game.add.text(600, 24, "Score: 0", {
 	        font: "24px Arial",
 	        fill: "#ffffff",
 	        align: "left"
@@ -447,7 +451,7 @@ var level2State = {
 		drinks.enableBody = true;
 
 
-		text = game.add.text(665, 24, "Score: 0", {
+		text = game.add.text(600, 24, "Score: 0", {
 	        font: "24px Arial",
 	        fill: "#ffffff",
 	        align: "left"
@@ -617,7 +621,7 @@ var level3State = {
 		drinks.enableBody = true;
 
 
-		text = game.add.text(665, 24, "Score: 0", {
+		text = game.add.text(600, 24, "Score: 0", {
 	        font: "24px Arial",
 	        fill: "#ffffff",
 	        align: "left"
