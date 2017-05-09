@@ -47,8 +47,8 @@ var loadState = {
 
 		//Load UI sprites
 		game.load.spritesheet('soundOnOff','assets/pictures/UI-sprites/soundOnOff.png', 48, 48, 2, 5, 10);
-		game.load.image('ui-menu', '/assets/pictures/UI-sprites/flatDark32.png');
-		game.load.image('ui-cross', '/assets/pictures/UI-sprites/flatDark34.png');
+		game.load.image('ui-menu', '/assets/pictures/UI-sprites/ui-menu.png');
+		game.load.image('ui-cross', '/assets/pictures/UI-sprites/ui-cross.png');
 		
 		
 		//Load powerups
