@@ -6,6 +6,6 @@ monsterImage.onload = function () {
 	monsterReady = true;
 	console.log("Monster image loaded " + monsterReady)
 };
-monsterImage.src = "game/oil.png";
+monsterImage.src = "game_old/oil.png";
 
 

@@ -7,7 +7,7 @@ var playerImage = new Image();
 playerImage.onload = function () {
 	playerReady = true;
 };
-playerImage.src = "game/player.png";
+playerImage.src = "game_old/player.png";
 
 	// Game objects
 

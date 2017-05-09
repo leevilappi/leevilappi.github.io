@@ -13,7 +13,7 @@ $(document).ready(function () {
 		bgReady = true;
 	};
 
-	bgImage.src = "game/background.png";
+	bgImage.src = "game_old/background.png";
 
 	var monsters = [];
 
@@ -24,7 +24,7 @@ $(document).ready(function () {
 		monsterReady = true;
 		console.log("Monster image loaded " + monsterReady);
 	};
-	monsterImage.src = "game/oil.png";
+	monsterImage.src = "game_old/oil.png";
 
 	var monstersCaught = 0;
 

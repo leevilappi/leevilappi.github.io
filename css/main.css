@@ -506,30 +506,25 @@
     height: 720px;
     background-color: #333333;
     margin: 0 auto;
-<<<<<<< HEAD
-=======
-    padding-top: 5%;
-    padding-left: 4%;
->>>>>>> origin/master
+    padding-top: 2%;
+    padding-left: 3%;
+
   }
 
   .game-wrapper canvas {
     padding: 0;
     margin: auto;
     display: block;
-<<<<<<< HEAD
     width: 960px;
     height: 640px;
     position: absolute;
     top: 0;
     bottom: 15%;
-=======
     width: 360px;
     height: 560px;
     position: absolute;
-    top: 20%;
+    /*top: 20%;*/
     bottom: 0;
->>>>>>> origin/master
     left: 0;
     right: 0;
   }
