@@ -50,10 +50,6 @@ var loadState = {
 
 		//Load UI sprites
 		game.load.spritesheet('soundOnOff','assets/pictures/UI-sprites/soundOnOff.png', 48, 48, 2, 5, 10);
-		game.load.image('ui-pause', 'assets/pictures/UI-sprites/flatDark13.png');
-		game.load.image('ui-play', 'assets/pictures/UI-sprites/flatDark15.png');
-		game.load.image('ui-settings', 'assets/pictures/UI-sprites/flatDark21.png');
-		game.load.image('ui-check', 'assets/pictures/UI-sprites/flatDark22.png');
 		game.load.image('ui-menu', 'assets/pictures/UI-sprites/flatDark32.png');
 		game.load.image('ui-cross', 'assets/pictures/UI-sprites/flatDark34.png');
 		
@@ -311,55 +307,56 @@ var menuCreditsState = {
 	var index;		 //Index for generating car sprite
 	var level;
 
-	var level1State = {
 
 
-		create: function(){
-
-			// Setting level 1 
-			menumusic.mute = true;
-			level1music.loopFull();
-			playerSpeed = 150;
-
-			level = 1;
-			timeInterval = 2500;
-			carSpeedLeft = -50;
-			carSpeedRight = 50;
-
-			game.add.sprite(0, 0, 'background1');
-			cars = game.add.group();
-			potholes = game.add.group();
-			cars.enableBody = true;
-			vehicles = game.add.group();
-
-			player = game.add.sprite(game.world.width / 2, game.world.height / 2, 'dude');
-			game.physics.arcade.enable(player);
-			player.body.collideWorldBounds = true;
-
-			player.animations.add('up', [104, 105, 106, 107, 108, 109, 110, 111, 112], 10, true);
-			player.animations.add('right', [143, 144, 145, 146, 147, 148, 149, 150, 151], 10, true);
-			player.animations.add('left', [117, 118, 119, 120, 121, 122, 123, 124, 125], 10, true);
-			player.animations.add('down', [130, 131, 132, 133, 134, 135, 136, 137, 138], 10, true);
-
-			drinks = game.add.group();
-			marks = game.add.group();
+var level1State = {
 
 
-			marks.enableBody = true;
-			drinks.enableBody = true;
+	create: function(){
+		
+		menumusic.mute = true;
+		level1music.loopFull();
+		playerSpeed = 150;
+		
+		level = 1;
+		timeInterval = 2500;
+		carSpeedLeft = -50;
+		carSpeedRight = 50;
 
-			text = game.add.text(650, 24, "Score: 0", {
-				font: "24px Arial",
-				fill: "#ffffff",
-				align: "left"
-			});
+		game.add.sprite(0, 0, 'background1');
+		cars = game.add.group();
+		potholes = game.add.group();
+		cars.enableBody = true;
+		vehicles = game.add.group()
 
-			text.anchor.setTo(0.5, 0.5);
+		player = game.add.sprite(game.world.width / 2, game.world.height / 2, 'dude');
+		game.physics.arcade.enable(player);
+		player.body.collideWorldBounds = true;
+		
+		player.animations.add('up', [104, 105, 106, 107, 108, 109, 110, 111, 112], 10, true);
+	    player.animations.add('right', [143, 144, 145, 146, 147, 148, 149, 150, 151], 10, true);
+		player.animations.add('left', [117, 118, 119, 120, 121, 122, 123, 124, 125], 10, true);
+		player.animations.add('down', [130, 131, 132, 133, 134, 135, 136, 137, 138], 10, true);
+		
+		drinks = game.add.group();
+		marks = game.add.group();
 
-			//Creating timers to spawn items correctly
-			timer = game.time.events.loop(timeInterval, spawnLevel1, this); 
-			potholeTimer = game.time.events.loop(5000, addPotholes, this); 
-			powerupTimer = game.time.events.loop(8000, addPowerups, this); 
+
+		marks.enableBody = true;
+		drinks.enableBody = true;
+
+		text = game.add.text(600, 24, "Score: 0", {
+	        font: "24px Arial",
+	        fill: "#ffffff",
+	        align: "left"
+	    });
+
+	    text.anchor.setTo(0.5, 0.5);
+
+	    timer = game.time.events.loop(timeInterval, spawnLevel1, this); 
+	    potholeTimer = game.time.events.loop(5000, addPotholes, this); 
+	    powerupTimer = game.time.events.loop(8000, addPowerups, this); 
+
 
 		//Adding the mute-button
 		this.musicToggle = this.game.add.button(this.game.world.width - 70, 420, 'soundOnOff', this.toggleMusic, this);
@@ -422,7 +419,7 @@ var menuCreditsState = {
 			player.body.velocity.x = 0;
 			player.body.velocity.y = 0;
 
-			cars.forEach(checkPos, this);
+			// cars.forEach(checkPos, this);
 
 
 
@@ -525,7 +522,7 @@ var level2State = {
 		drinks.enableBody = true;
 
 
-		text = game.add.text(665, 24, "Score: 0", {
+		text = game.add.text(600, 24, "Score: 0", {
 	        font: "24px Arial",
 	        fill: "#ffffff",
 	        align: "left"
@@ -594,7 +591,7 @@ var level2State = {
 		player.body.velocity.x = 0;
 		player.body.velocity.y = 0;
 
-		cars.forEach(checkPos, this);
+		// cars.forEach(checkPos, this);
 		
 		if (cursors.left.isDown)
 	    {
@@ -695,7 +692,7 @@ var level3State = {
 		drinks.enableBody = true;
 
 
-		text = game.add.text(665, 24, "Score: 0", {
+		text = game.add.text(600, 24, "Score: 0", {
 	        font: "24px Arial",
 	        fill: "#ffffff",
 	        align: "left"
@@ -762,7 +759,7 @@ var level3State = {
 		player.body.velocity.x = 0;
 		player.body.velocity.y = 0;
 
-		cars.forEach(checkPos, this);
+		// cars.forEach(checkPos, this);
 		
 		if (cursors.left.isDown)
 	    {
