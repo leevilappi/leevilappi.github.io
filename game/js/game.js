@@ -7,6 +7,7 @@ var bootState = {
 
 	preload: function() {
 			game.load.image('loadpic', 'assets/pictures/load.png');
+			game.load.image('loader', 'assets/pictures/loading.gif')
 	},
 
 	create: function() {
@@ -22,10 +23,13 @@ var loadState = {
 	preload: function() {
 
 		this.logo = this.add.image
+		this.loader = this.add.image
+
+		this.add.image(game.world.width / 2 - 80, 420)
 
 		this.add.sprite(0, 0, 'loadpic');
 
-		var loadingLabel = game.add.text(game.world.width / 2 - 150, 440, 'ladataan peliä...',
+		var loadingLabel = game.add.text(game.world.width / 2 - 150, 440, 'Peliä ladataan...',
 											{font: '30px Courier', fill: '#ffffff'});
 
 		//Load game levels
