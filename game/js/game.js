@@ -15,11 +15,11 @@ var bootState = {
 	}
 }
 
-
 var loadState = {
 
 
 	preload: function() {
+
 
 		this.logo = this.add.image
 		this.add.sprite(0, 0, 'loadpic');
@@ -50,8 +50,12 @@ var loadState = {
 
 		//Load UI sprites
 		game.load.spritesheet('soundOnOff','assets/pictures/UI-sprites/soundOnOff.png', 48, 48, 2, 5, 10);
-		game.load.image('ui-menu','assets/pictures/UI-sprites/ui-menu.png');
-		game.load.image('ui-cross','assets/pictures/UI-sprites/ui-cross.png');
+		game.load.image('ui-pause', 'assets/pictures/UI-sprites/flatDark13.png');
+		game.load.image('ui-play', 'assets/pictures/UI-sprites/flatDark15.png');
+		game.load.image('ui-settings', 'assets/pictures/UI-sprites/flatDark21.png');
+		game.load.image('ui-check', 'assets/pictures/UI-sprites/flatDark22.png');
+		game.load.image('ui-menu', 'assets/pictures/UI-sprites/flatDark32.png');
+		game.load.image('ui-cross', 'assets/pictures/UI-sprites/flatDark34.png');
 		
 		
 		//Load powerups
@@ -232,7 +236,7 @@ var menuCreditsState = {
     var carSpeedRight = 50;
     var carSpeedLeft = -50;
     var potholesRepaired = 0;
-    var timeInterval = 2500; //How often cars generate in milliseconds
+    var timeInterval = 2500;
     var player;
 	var levelBuffer;
 	var index; //Indeksi satunnaisen autokuvan generoimisieen
