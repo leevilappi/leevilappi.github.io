@@ -20,9 +20,8 @@ var loadState = {
 
 		
 		game.load.image('loadpic', 'assets/pictures/load.png');
-		game.add.sprite(0, 0, 'loadpic');
 
-		var loadingLabel = game.add.text(game.world.width / 2 - 150, 430, 'ladataan peliä...',
+		var loadingLabel = game.add.text(game.world.width / 2 - 150, 440, 'ladataan peliä...',
 											{font: '30px Courier', fill: '#ffffff'});
 
 		//Load game levels
@@ -48,8 +47,8 @@ var loadState = {
 
 		//Load UI sprites
 		game.load.spritesheet('soundOnOff','assets/pictures/UI-sprites/soundOnOff.png', 48, 48, 2, 5, 10);
-		game.load.image('ui-menu', '/assets/pictures/menu/flatDark32.png');
-		game.load.image('ui-cross', '/assets/pictures/menu/flatDark34.png');
+		game.load.image('ui-menu', '/assets/pictures/UI-sprites/flatDark32.png');
+		game.load.image('ui-cross', '/assets/pictures/UI-sprites/flatDark34.png');
 		
 		
 		//Load powerups
@@ -103,7 +102,7 @@ var loadState = {
 	},
 
 	create: function() {
-
+		game.add.sprite(0, 0, 'loadpic');
 		game.state.start('menu')
 	}
 };
