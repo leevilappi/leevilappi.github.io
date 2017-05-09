@@ -5,6 +5,10 @@
 
 var bootState = {
 
+	preload: function() {
+			game.load.image('loadpic', 'assets/pictures/load.png');
+	},
+
 	create: function() {
 			game.physics.startSystem(Phaser.Physics.ARCADE);
 			game.state.start('load');
@@ -17,8 +21,9 @@ var loadState = {
 
 	preload: function() {
 
-		
-		game.load.image('loadpic', 'assets/pictures/load.png');
+		this.logo = this.add.image
+
+		this.add.sprite(0, 0, 'loadpic');
 
 		var loadingLabel = game.add.text(game.world.width / 2 - 150, 440, 'ladataan peliä...',
 											{font: '30px Courier', fill: '#ffffff'});
@@ -101,7 +106,6 @@ var loadState = {
 	},
 
 	create: function() {
-		game.add.sprite(0, 0, 'loadpic');
 		game.state.start('menu')
 	}
 };
