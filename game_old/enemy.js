@@ -1,19 +1,11 @@
-
-
-var enemies = {};
-
-function getRandomInteger(min, max) {
-  return Math.floor(Math.random() * (max - min + 1)) + min;
-}
-
-var npc = {
-		x: getRandomInteger(20, 940),
-		y: getRandomInteger(20, 620),
-		w: 40,
-		h: 40,
-		speed: 10
+// Monster image
+var monsterReady = false;
+var monsterImage = new Image();
+monsterImage.onload = function () {
+	console.log("Monster image loaded " + monsterReady)
+	monsterReady = true;
+	console.log("Monster image loaded " + monsterReady)
 };
+monsterImage.src = "game/oil.png";
 
-function create() {
-	
-}
+
