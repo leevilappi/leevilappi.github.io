@@ -21,7 +21,7 @@ var loadState = {
 		
 		game.load.image('loadpic', 'assets/pictures/load.png');
 
-		var loadingLabel = game.add.text(game.world.width / 2 - 150, 480 / 2, 'ladataan peliä...',
+		var loadingLabel = game.add.text(game.world.width / 2 - 150, 460, 'ladataan peliä...',
 											{font: '30px Courier', fill: '#ffffff'});
 
 		//Load game levels
@@ -234,7 +234,7 @@ var menuCreditsState = {
     var carSpeedRight = 50;
     var carSpeedLeft = -50;
     var potholesRepaired = 0;
-    var timeInterval = 2500;
+    var timeInterval = 2500; //How often cars generate in milliseconds
     var player;
 	var levelBuffer;
 	var index; //Indeksi satunnaisen autokuvan generoimisieen
