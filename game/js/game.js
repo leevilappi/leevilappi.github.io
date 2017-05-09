@@ -25,9 +25,9 @@ var loadState = {
 		this.logo = this.add.image
 		this.loader = this.add.image
 
-		this.add.image(game.world.width / 2 - 80, 420)
 
 		this.add.sprite(0, 0, 'loadpic');
+		this.add.image(game.world.width / 2 - 80, 420, 'loader');
 
 		var loadingLabel = game.add.text(game.world.width / 2 - 150, 440, 'Peliä ladataan...',
 											{font: '30px Courier', fill: '#ffffff'});
