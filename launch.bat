@@ -1,3 +1,5 @@
 @echo off
-Title Project running with Grunt
-grunt
+title VJP Site
+echo Server started!
+start "" chrome.exe http://127.0.0.1:8080/
+http-server
