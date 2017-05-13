@@ -6,7 +6,7 @@
 var bootState = {
 
 	preload: function() {
-			game.load.image('loadpic', 'assets/pictures/load.png');
+			game.load.image('loadpic', 'game/assets/pictures/load.png');
 	},
 
 	create: function() {
@@ -28,78 +28,78 @@ var loadState = {
 											{font: '30px Courier', fill: '#ffffff'});
 
 		//Load game levels
-		game.load.image('background1', 'assets/pictures/background1.png');
-		game.load.image('background2', 'assets/pictures/background2.png');
-		game.load.image('background3', 'assets/pictures/background3.png');
+		game.load.image('background1', 'game/assets/pictures/background1.png');
+		game.load.image('background2', 'game/assets/pictures/background2.png');
+		game.load.image('background3', 'game/assets/pictures/background3.png');
 
 
 		//Load menu items
-		game.load.image('backgroundMenu', 'assets/pictures/menu/menu.png');
-		game.load.image('instructions', 'assets/pictures/menu/OHJEET.png');
-		game.load.image('playGame', 'assets/pictures/menu/PELAA.png');
-		game.load.image('information', 'assets/pictures/menu/TIETOA.png');
-		game.load.image('more', 'assets/pictures/menu/more.png');
+		game.load.image('backgroundMenu', 'game/assets/pictures/menu/menu.png');
+		game.load.image('instructions', 'game/assets/pictures/menu/OHJEET.png');
+		game.load.image('playGame', 'game/assets/pictures/menu/PELAA.png');
+		game.load.image('information', 'game/assets/pictures/menu/TIETOA.png');
+		game.load.image('more', 'game/assets/pictures/menu/more.png');
 
-		game.load.image('backgroundOhjeet', 'assets/pictures/menu/menu_ohjeet.png');
-		game.load.image('backgroundTietoa', 'assets/pictures/menu/menu_credits.png');
-		game.load.image('pauseMenu', 'assets/pictures/menu/pauseMenu.png');
+		game.load.image('backgroundOhjeet', 'game/assets/pictures/menu/menu_ohjeet.png');
+		game.load.image('backgroundTietoa', 'game/assets/pictures/menu/menu_credits.png');
+		game.load.image('pauseMenu', 'game/assets/pictures/menu/pauseMenu.png');
 
 		//Load lose and win screens
-		game.load.image('winScreen', 'assets/pictures/win.png');
-		game.load.image('loseScreen', 'assets/pictures/lose.png');
+		game.load.image('winScreen', 'game/assets/pictures/win.png');
+		game.load.image('loseScreen', 'game/assets/pictures/lose.png');
 
 		//Load UI sprites
-		game.load.spritesheet('soundOnOff','assets/pictures/UI-sprites/soundOnOff.png', 48, 48, 2, 5, 10);
-		game.load.image('ui-menu', 'assets/pictures/UI-sprites/flatDark32.png');
-		game.load.image('ui-cross', 'assets/pictures/UI-sprites/flatDark34.png');
+		game.load.spritesheet('soundOnOff','game/assets/pictures/UI-sprites/soundOnOff.png', 48, 48, 2, 5, 10);
+		game.load.image('ui-menu', 'game/assets/pictures/UI-sprites/flatDark32.png');
+		game.load.image('ui-cross', 'game/assets/pictures/UI-sprites/flatDark34.png');
 		
 		
 		//Load powerups
-	    game.load.image('energyDrink', 'assets/pictures/möfö.png');
-		game.load.image('SpeedSign', 'assets/pictures/nopeusmerkki.png');
+	    game.load.image('energyDrink', 'game/assets/pictures/möfö.png');
+		game.load.image('SpeedSign', 'game/assets/pictures/nopeusmerkki.png');
 
 		//Load potholes and create game character sprite
-		game.load.image('pothole', 'assets/pictures/pothole.png');
-		game.load.spritesheet('dude', 'assets/pictures/character.png', 32, 32);
+		game.load.image('pothole', 'game/assets/pictures/pothole.png');
+		game.load.spritesheet('dude', 'game/assets/pictures/character.png', 32, 32);
 
 		//Load different vehicles
-	    game.load.image('car11', 'assets/pictures/cars/car1_1.png');
-	    game.load.image('car12', 'assets/pictures/cars/car1_2.png');
+	    game.load.image('car11', 'game/assets/pictures/cars/car1_1.png');
+	    game.load.image('car12', 'game/assets/pictures/cars/car1_2.png');
 
-	    game.load.image('car21', 'assets/pictures/cars/car2_1.png');
-	    game.load.image('car22', 'assets/pictures/cars/car2_2.png');
+	    game.load.image('car21', 'game/assets/pictures/cars/car2_1.png');
+	    game.load.image('car22', 'game/assets/pictures/cars/car2_2.png');
 
-	    game.load.image('car31', 'assets/pictures/cars/car3_1.png');
-	    game.load.image('car32', 'assets/pictures/cars/car3_2.png');
+	    game.load.image('car31', 'game/assets/pictures/cars/car3_1.png');
+	    game.load.image('car32', 'game/assets/pictures/cars/car3_2.png');
 
-	    game.load.image('car41', 'assets/pictures/cars/car4_1.png');
-	    game.load.image('car42', 'assets/pictures/cars/car4_2.png');
+	    game.load.image('car41', 'game/assets/pictures/cars/car4_1.png');
+	    game.load.image('car42', 'game/assets/pictures/cars/car4_2.png');
 		
-		game.load.image('car51', 'assets/pictures/cars/car5_1.png');
-	    game.load.image('car52', 'assets/pictures/cars/car5_2.png');
+		game.load.image('car51', 'game/assets/pictures/cars/car5_1.png');
+	    game.load.image('car52', 'game/assets/pictures/cars/car5_2.png');
 
-	    game.load.image('car61', 'assets/pictures/cars/car6_1.png');
-	    game.load.image('car62', 'assets/pictures/cars/car6_2.png');
+	    game.load.image('car61', 'game/assets/pictures/cars/car6_1.png');
+	    game.load.image('car62', 'game/assets/pictures/cars/car6_2.png');
 
-	    game.load.image('car71', 'assets/pictures/cars/car7_1.png');
-	    game.load.image('car72', 'assets/pictures/cars/car7_2.png');
+	    game.load.image('car71', 'game/assets/pictures/cars/car7_1.png');
+	    game.load.image('car72', 'game/assets/pictures/cars/car7_2.png');
 
-	    game.load.image('car81', 'assets/pictures/cars/car8_1.png');
-	    game.load.image('car82', 'assets/pictures/cars/car8_2.png');
+	    game.load.image('car81', 'game/assets/pictures/cars/car8_1.png');
+	    game.load.image('car82', 'game/assets/pictures/cars/car8_2.png');
 		
-		game.load.audio('car_pass', 'assets/audio/car_pass.mp3');
-		game.load.audio('car_whoor', 'assets/audio/car_whoor.mp3');
-		game.load.audio('fail', 'assets/audio/fail.mp3');
-		game.load.audio('hit', 'assets/audio/hit.mp3');
-		game.load.audio('level_menu', 'assets/audio/level_menu_.mp3');
-		game.load.audio('level1', 'assets/audio/level1.mp3');
-		game.load.audio('level2', 'assets/audio/level2.mp3');
-		game.load.audio('level3', 'assets/audio/level3.mp3');
-		game.load.audio('lose', 'assets/audio/lose.mp3');
-		game.load.audio('menu', 'assets/audio/menu.mp3');
-		game.load.audio('win', 'assets/audio/win.mp3');
-		game.load.audio('drink', 'assets/audio/drink.mp3');
-		game.load.audio('mark', 'assets/audio/mark.mp3');
+		game.load.audio('car_pass', 'game/assets/audio/car_pass.mp3');
+		game.load.audio('car_whoor', 'game/assets/audio/car_whoor.mp3');
+		game.load.audio('fail', 'game/assets/audio/fail.mp3');
+		game.load.audio('hit', 'game/assets/audio/hit.mp3');
+		game.load.audio('level_menu', 'game/assets/audio/level_menu_.mp3');
+		game.load.audio('level1', 'game/assets/audio/level1.mp3');
+		game.load.audio('level2', 'game/assets/audio/level2.mp3');
+		game.load.audio('level3', 'game/assets/audio/level3.mp3');
+		game.load.audio('lose', 'game/assets/audio/lose.mp3');
+		game.load.audio('menu', 'game/assets/audio/menu.mp3');
+		game.load.audio('win', 'game/assets/audio/win.mp3');
+		game.load.audio('drink', 'game/assets/audio/drink.mp3');
+		game.load.audio('mark', 'game/assets/audio/mark.mp3');
 		
 	},
 
