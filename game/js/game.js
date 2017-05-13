@@ -113,6 +113,7 @@ var loadState = {
     var soundOn = true;
     var musicOn = true;
     var musicToggle;
+    var firstTime = true;
 
 var menuState = {
 
@@ -154,7 +155,11 @@ var menuState = {
 	buttonInstructions = game.add.button(game.world.width / 2-95 , 250, 'instructions', this.help, this, 2, 1, 0);
 	buttonInfo = game.add.button(game.world.width / 2-95 , 325, 'information', this.info, this, 2, 1, 0);
 
+	if(firstTime){
 		this.toggleMusic();
+		firstTime = false
+	};
+
 	},
   
 	toggleMusic: function() {	
@@ -305,6 +310,11 @@ var level1State = {
 
 	    //Adding the pause-button
 	    this.pause_label = this.game.add.button(this.game.world.width - 130, 420, 'ui-menu', this.pause, this);
+
+	    if(this.game.sound.mute){
+	    	this.toggleMusic();
+	    }
+
 
 
 	},
