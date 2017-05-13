@@ -110,8 +110,8 @@ var loadState = {
 
 
 
-    var soundOn = true;
-    var musicOn = true;
+    var soundOn = false;
+    var musicOn = false;
     var musicToggle;
 
 var menuState = {
