@@ -134,7 +134,7 @@
 	
 		var map = new google.maps.Map(document.getElementById('map'), {
 			
-		  zoom: 20,
+		  zoom: 19,
 			scrollwheel: false,
 			navigationControl: true,
 			mapTypeControl: false,
@@ -142,7 +142,7 @@
 			draggable: true,
 			styles: [ { "stylers": [ { "hue": "#428ae6" },  {saturation: 100},
                 {gamma: 1} ] } ],
-			center: new google.maps.LatLng(60.1670218,24.9468678),
+			center: new google.maps.LatLng(60.167417, 24.944690),
 		  mapTypeId: google.maps.MapTypeId.ROADMAP
 		});
 	
