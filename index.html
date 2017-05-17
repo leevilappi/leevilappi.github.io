@@ -365,17 +365,17 @@
             </div><!-- end title -->
             
             <div id="testimonial" class="owl-carousel owl-theme text-center">
-                <div class="testimonial"  data-scroll-reveal="enter from the bottom after 0.3s">
+                <div class="testimonial"  data-toggle="modal" data-target="#firstNews" data-scroll-reveal="enter from the bottom after 0.3s">
                     <p>Quisque est enim lacinia lobortis da viverra interdum, quam. In sagittis, eros faucibus ullamcorper nibh dolor</p>
                     <h1> <a href="www.lvm.fi" id="newsButton"> Lue lisää! </a> </h1>
                 </div>
-                <div class="testimonial">
-                    <p>A dsfadsfads In sagittis, eros faucibus ullamcorper nibh dolor</p>
-                    <h1> DANIEL Smith </h1>
+                <div class="testimonial" data-toggle="modal" data-target="#secondNews" data-scroll-reveal="enter from the bottom after 0.3s">
+                    <p>Video tieliikenneuudistuksesta on julkaistu! Video selittää miksi Suomi tarvitsee uudistusta juuri nyt!</p>
+                    <h1> <a id="newsButton"> Katso video! </a> </h1>
                 </div>
-                <div class="testimonial">
+                <div class="testimonial"  data-toggle="modal" data-target="#myModal" data-scroll-reveal="enter from the bottom after 0.3s">
                     <p>Quisque est enim lacinia lobortis da viverra interdum, quam. In sagittis, eros faucibus ullamcorper nibh dolor</p>
-                    <h1> DANIEL Smith </h1>
+                    <h1> <a href="www.lvm.fi" id="newsButton"> Lue lisää! </a> </h1>
                 </div>
             </div><!-- end #testimonial -->
             
@@ -714,6 +714,73 @@
           </div>
       </div>
   </div>
+
+    <!-- Modal -->
+          <div class="modal fade" id="firstNews" role="dialog">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  <h4 class="modal-title">Peli</h4>
+              </div>
+              <div class="modal-body">
+                  <div id="gameDiv"></div>
+              </div>
+              <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Sulje</button>
+                  <!-- <button type="button" onclick="stopGame()" class="btn btn-default" data-dismiss="modal">Sulje</button> -->
+              </div>
+          </div>
+      </div>
+  </div>
+
+
+   <!-- Modal -->
+          <div class="modal fade" id="secondNews" role="dialog">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  <h4 class="modal-title">Liikenneuudistusvideo</h4>
+              </div>
+              <div  id="gameDiv" class="modal-body">
+                  <video width="720" height="480" controls>
+                      <source src="images/vjp.mp4" type="video/mp4">
+                      <source src="images/vjp.ogg" type="video/ogg">
+                      <source src="images/vjp.webm" type="video/webm">
+                    Your browser does not support the video tag.
+                </video>
+              </div>
+              <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Sulje</button>
+                  <!-- <button type="button" onclick="stopGame()" class="btn btn-default" data-dismiss="modal">Sulje</button> -->
+              </div>
+          </div>
+      </div>
+  </div>
+
+
+
+
+   <!-- Modal -->
+          <div class="modal fade" id="thirdNews" role="dialog">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  <h4 class="modal-title">Peli</h4>
+              </div>
+              <div class="modal-body">
+                  <div id="gameDiv"></div>
+              </div>
+              <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Sulje</button>
+                  <!-- <button type="button" onclick="stopGame()" class="btn btn-default" data-dismiss="modal">Sulje</button> -->
+              </div>
+          </div>
+      </div>
+  </div>
+
     
 </body>
 </html>
