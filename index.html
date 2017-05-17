@@ -360,31 +360,86 @@
     </section><!-- end grey-wrapper -->
 	
     
-    <!-- TESTIMONIAL SECTION -->              
+    <!-- TESTIMONIAL SECTION -->   
+    <section style="margin-bottom: 100px">
             <div id="news" class="testimonial text-center anchor">
                 <h2 class="three" data-scroll-reveal="enter from the bottom after 0.2s">Uutisia</h2>
             </div><!-- end title -->
             
-            <div id="testimonial" class="owl-carousel owl-theme text-center">
-                <div class="testimonial"  data-toggle="modal" data-target="#firstNews" data-scroll-reveal="enter from the bottom after 0.3s">
-                    <p>Quisque est enim lacinia lobortis da viverra interdum, quam. In sagittis, eros faucibus ullamcorper nibh dolor</p>
-                    <h1> <a href="www.lvm.fi" id="newsButton"> Lue lisää! </a> </h1>
-                </div>
-                <div class="testimonial" data-toggle="modal" data-target="#secondNews" data-scroll-reveal="enter from the bottom after 0.3s">
-                    <p>Video tieliikenneuudistuksesta on julkaistu! Video selittää miksi Suomi tarvitsee uudistusta juuri nyt!</p>
-                    <h1> <a id="newsButton"> Katso video! </a> </h1>
-                </div>
-                <div class="testimonial"  data-toggle="modal" data-target="#myModal" data-scroll-reveal="enter from the bottom after 0.3s">
-                    <p>Quisque est enim lacinia lobortis da viverra interdum, quam. In sagittis, eros faucibus ullamcorper nibh dolor</p>
-                    <h1> <a href="www.lvm.fi" id="newsButton"> Lue lisää! </a> </h1>
-                </div>
-            </div><!-- end #testimonial -->
+            <div class="container">
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    
+      <!-- Wrapper for slides -->
+      <div class="carousel-inner">
+      
+        <div class="item active">
+          <img src="images/news1.png">
+           <div class="carousel-caption">
+            <h4><a href="#">Kampanjavideo on julkaistu!</a></h4>
+            <p>Tieliikenneuudistuksen virallinen kampanjavideo on julkaistu. Katso miksi Suomi tarvitsee uudistusta juuri nyt! <a class="label label-primary" href="http://sevenx.de/demo/bootstrap-carousel/" target="_blank" data-toggle="modal" data-target="#secondNews" >Katso video</a></p>
+          </div>
+        </div><!-- End Item -->
+ 
+         <div class="item">
+          <img src="images/news2.jpg">
+           <div class="carousel-caption">
+            <h4><a href="#">Anne Berner puolustaa liikenneuudistusta: Samalla rahamäärällä saadaan enemmän</a></h4>
+            <p>Liikenne- ja viestintäministerin mukaan maaseudun kurittaminen ei ole vaihtoehto. <a class="label label-primary" href="https://www.verkkouutiset.fi/kotimaa/Berner_enemman-60560" target="_blank">Lue koko juttu</a></p>
+          </div>
+        </div><!-- End Item -->
+        
+        <div class="item">
+          <img src="images/news3.jpg">
+           <div class="carousel-caption">
+            <h4><a href="#">Näin Berner selittää kiisteltyä liikenneuudistusta</a></h4>
+            <p>Liikenne- ja viestintäministeri Anne Bernerin (kesk) tiedotustilaisuus suuria tunteita nostattaneesta liikenneverkkouudistuksesta. <a class="label label-primary" href="http://www.iltalehti.fi/uutiset/201701182200056005_uu.shtml" target="_blank">Lue koko juttu</a></p>
+          </div>
+        </div><!-- End Item -->
+        
+        <div class="item">
+          <img src="http://placehold.it/760x400/999999/cccccc">
+           <div class="carousel-caption">
+            <h4><a href="#">magna aliquyam erat, sed diam voluptua</a></h4>
+            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat. <a class="label label-primary" href="http://sevenx.de/demo/bootstrap-carousel/" target="_blank">Free Bootstrap Carousel Collection</a></p>
+          </div>
+        </div><!-- End Item -->
+
+        <div class="item">
+          <img src="http://placehold.it/760x400/dddddd/333333">
+           <div class="carousel-caption">
+            <h4><a href="#">tempor invidunt ut labore et dolore magna aliquyam erat</a></h4>
+            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat. <a class="label label-primary" href="http://sevenx.de/demo/bootstrap-carousel/" target="_blank">Free Bootstrap Carousel Collection</a></p>
+          </div>
+        </div><!-- End Item -->
+                
+      </div><!-- End Carousel Inner -->
+
+
+    <ul class="list-group col-sm-4">
+      <li data-target="#myCarousel" data-slide-to="0" class="list-group-item active"><h4>Kampanjavideo on julkaistu!</h4></li>
+      <li data-target="#myCarousel" data-slide-to="1" class="list-group-item"><h4>Anne Berner puolustaa liikenneuudistusta: Samalla rahamäärällä saadaan enemmän</h4></li>
+      <li data-target="#myCarousel" data-slide-to="2" class="list-group-item"><h4>Näin Berner selittää kiisteltyä liikenneuudistusta</h4></li>
+      <li data-target="#myCarousel" data-slide-to="3" class="list-group-item"><h4>magna aliquyam erat, sed diam voluptua</h4></li>
+      <li data-target="#myCarousel" data-slide-to="4" class="list-group-item"><h4>tempor invidunt ut labore et dolore magna aliquyam erat</h4></li>
+    </ul>
+
+      <!-- Controls -->
+      <div class="carousel-controls">
+          <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+          </a>
+          <a class="right carousel-control" href="#myCarousel" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+          </a>
+      </div>
+
+    </div><!-- End Carousel -->
+</div>
+
+
+
+
             
-            <div class="customNavigation">
-                <a class="btn prev"><i class="fa fa-angle-left fa-2x"></i></a>
-                <a class="btn next"><i class="fa fa-angle-right fa-2x"></i></a>
-            </div><!-- end customnav -->
-       </div> <!-- end container -->
     </section><!-- Service and Testimonial End --> 
 
     
@@ -642,6 +697,8 @@
      <!-- SLIDER REVOLUTION 4.x SCRIPTS  -->
         <script type="text/javascript" src="rs-plugin/js/jquery.themepunch.plugins.min.js"></script>
         <script type="text/javascript" src="rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
+
+
 
 	
 	<script type="text/javascript">
