@@ -2722,3 +2722,7 @@
 	.carousel-caption p,
 	#myCarousel .list-group {display:none;} 
 }
+
+.modal-backdrop {
+  z-index: -1;
+}
