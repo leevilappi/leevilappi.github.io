@@ -1035,6 +1035,16 @@
 	4.1 GAME
 	################################################################# */
 
+	/*.anchor { padding-top: 100px; }*/
+
+	.anchor::before {
+	  content:"";
+	  display:block;
+	  height:50px; /* fixed header height*/
+	  margin:-50px 0 0; /* negative fixed header height */
+	}
+
+
 	#gameDiv {
 		margin: 5% 8%;
 	}
