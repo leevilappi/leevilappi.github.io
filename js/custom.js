@@ -129,20 +129,20 @@
 		
 // Google Map
 	var locations = [
-		['<div class="infobox"><h3 class="title"><a href="#contact">OUR USA OFFICE</a></h3><span>NEW YORK CITY 2045 / 65</span><br>+90 555 666 77 88</p></div></div></div>', -37.801578, 145.060508, 2]
+		['<div class="infobox"><h3 class="title"><a href="#contact">TOIMISTOMME</a></h3><span>ETELÄESPLANADI 16</span><br>0295 16001</p></div></div></div>', 60.1670218,24.9468678, 1]
 		];
 	
 		var map = new google.maps.Map(document.getElementById('map'), {
 			
-		  zoom: 10,
+		  zoom: 20,
 			scrollwheel: false,
 			navigationControl: true,
 			mapTypeControl: false,
 			scaleControl: false,
-			draggable: false,
-			styles: [ { "stylers": [ { "hue": "#27e0ff" },  {saturation: 100},
+			draggable: true,
+			styles: [ { "stylers": [ { "hue": "#428ae6" },  {saturation: 100},
                 {gamma: 1} ] } ],
-			center: new google.maps.LatLng(-37.801578, 145.060508),
+			center: new google.maps.LatLng(60.1670218,24.9468678),
 		  mapTypeId: google.maps.MapTypeId.ROADMAP
 		});
 	
@@ -155,7 +155,7 @@
 			marker = new google.maps.Marker({ 
 			position: new google.maps.LatLng(locations[i][1], locations[i][2]), 
 			map: map ,
-			icon: 'images/marker.png'
+			icon: 'images/location.png'
 			});
 	
 	
@@ -174,3 +174,5 @@
 		  
 			
 	})(jQuery);	
+
+map.setCenterWithOffset(latlng, -100, 50);
