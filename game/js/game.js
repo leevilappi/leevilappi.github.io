@@ -226,7 +226,8 @@ var menuCreditsState = {
 	},
 
 	link: function() {
-		window.open("http://www.lvm.fi", "_blank");
+		window.open("http://www.leevilappi.github.io", "_blank");
+		 // Link to campaing web site
 	}
 
 };
